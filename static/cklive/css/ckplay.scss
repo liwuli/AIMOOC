@@ -1,0 +1,445 @@
+@charset "UTF-8";
+$color000:#000; // 背景色
+$bgwhite: #fff; // 
+$color666:#666; //边线颜色
+$color3297fc: #3297fc; // 渐变左侧
+$color91c8ff:#91c8ff; // 渐变右侧
+#playerAreaplay { 
+    background: $color000; 
+    bottom: 0; 
+    height: 100%; 
+    left: 0; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    position: relative; 
+    right: 0; 
+    top: 0; 
+    width: 100%; 
+    div { 
+        position: relative; 
+        float: left; 
+    }
+    video { 
+        position: absolute; 
+        z-index: 1; 
+    }
+    video::-webkit-media-controls-enclosure { 
+        /*禁用播放器控制栏的样式*/ 
+        display: none !important; 
+    }
+    video:-webkit-full-screen { 
+        z-index: -1; 
+    }
+    .list { 
+        border: 1px solid $color666; 
+        border-bottom: none; 
+        position: relative; 
+        overflow: hidden;
+        z-index: 1;
+        object,embed{
+            float: left; 
+            height: 100%; 
+            position: relative; 
+            width: 100%; 
+            z-index: 1;
+        }
+        .title { 
+            border-bottom: 1px solid $color666;
+            background: rgba(0, 0, 0, 0.6); 
+            color: $bgwhite; 
+            font-size: 14px; 
+            height: 30px; 
+            line-height: 30px; 
+            left: 0; 
+            position: absolute; 
+            padding: 0 1%;
+            top: 0; 
+            text-indent: 10px;
+            width: 98%; 
+            z-index: 2; 
+        }
+    }
+    .nosingal { 
+        border: 1px solid $color666; 
+        color: $bgwhite; 
+        float: right; 
+        text-align: center; 
+    }
+    .bigplay{
+        color: #3197fc;
+        font-size: 46px;
+        float: left;
+        height: 46px;
+        width: 46px;
+    }
+    .control { 
+        background: rgba(0,0,0,0.5); 
+        bottom: 0px;
+        float: left; 
+        height: 40px; 
+        position: absolute; 
+        transition: bottom 0.3s ease-in-out 0s;
+        width: 100%; 
+        z-index: 1000000;
+        .play {
+            margin-left: 10px; 
+            font-size: 17px;
+            color: $bgwhite; 
+            cursor: pointer; 
+            float: left; 
+            height: 17px; 
+            margin-top: 15px; 
+        }
+        .pause { 
+            margin-left: 10px; 
+            font-size: 17px;
+            color: $bgwhite; 
+            cursor: pointer; 
+            float: left; 
+            height: 17px; 
+            margin-top: 16px; 
+            overflow: hidden;  
+        }
+        .nowtime { 
+            color: $bgwhite; 
+            font-size: 12px;
+            float: left; 
+            height: 25px; 
+            line-height: 25px; 
+            margin-top: 13px; 
+            text-align: center; 
+            width: 56px; 
+        }
+        .totaltime { 
+            color: #d3d3d3; 
+            font-size: 12px;
+            float: left; 
+            height: 25px; 
+            line-height: 25px; 
+            margin-top: 13px; 
+            position: relative; 
+            text-align: right; 
+            width: 56px; 
+        }
+        .totaltime:before { 
+            content: '/'; 
+            position: absolute; 
+            left: -8px; 
+            height: 25px; 
+            margin-left: -2px;
+            top: 0; 
+            width: 15px; 
+        }
+        .timeline:selection { 
+            background: none; 
+        }
+        .timeline { 
+            cursor: default; 
+            height: 7px; 
+            position: absolute; 
+            width: 100%; 
+        }
+        .playinbg, .playin { 
+            background: rgba(255,255,255,0.4); 
+            height: 8px; 
+            left: 0; 
+            position: absolute; 
+            top: 0; 
+            width: 100%; 
+        }
+        .playin { 
+            background: linear-gradient(90deg, $color3297fc 70%, $color91c8ff);
+            border-radius: 0 5px 5px 0;
+            width: 0; 
+            z-index: 201; 
+        }
+        .playin:before { 
+            background: $bgwhite; 
+            border-radius: 8px; 
+            content: ''; 
+            height: 8px; 
+            right: 0; 
+            position: absolute; 
+            top: 0px; 
+            width: 8px; 
+        }
+    //  .playin:before { 
+    //      background: $bgwhite; 
+    //      border-radius: 50%; 
+    //      content: ''; 
+    //      height: 15px; 
+    //      right: 0; 
+    //      position: absolute; 
+    //      top: -5px; 
+    //      width: 15px; 
+    //  }
+    //  .playin:after { 
+    //      background: #0084ff; 
+    //      border-radius: 50%; 
+    //      content: ''; 
+    //      height: 8px; 
+    //      right: 2px; 
+    //      position: absolute; 
+    //      top: -1px;
+    //      width: 8px; 
+    //  }
+        .volum, .fullScreen, .outfullScreen,.model{
+            font-size: 13px;
+            color: $bgwhite;  
+            cursor: pointer; 
+            float: right; 
+            height: 13px; 
+            margin-top: 16px; 
+            position: relative; 
+            width: 13px;
+            margin-left: 10px;
+            margin-right: 10px; 
+        }
+        .fullScreen ,.outfullScreen{ 
+            font-size: 15px;
+            margin-top: 15px;
+            color: $bgwhite; 
+        }
+        .volumcontrol { 
+            color: $bgwhite; 
+            float: right;
+            font-size: 12px;
+            height: 12px; 
+            font-size: 12px; 
+            line-height: 12px; 
+            position: relative; 
+            margin-top: 17px; 
+            margin-right: 10px; 
+            text-align: center; 
+            width: 80px; 
+            .title { 
+                background: none;
+                border: none;
+                cursor: pointer;  
+                color: $bgwhite; 
+                height: 12px; 
+                font-size: 12px; 
+                line-height: 12px; 
+                position: relative; 
+                padding: 0;
+                text-align: center; 
+                width: 80px; 
+            }
+            .volumcontrollist { 
+                border: 1px solid #242424; 
+                background: #242424; 
+                display: none; 
+                line-height: 20px; 
+                width: 80px; 
+                .mute { 
+                    box-shadow: 0 1px 0 0 #606060;
+                    cursor: pointer; 
+                    color: $bgwhite; 
+                    float: left; 
+                    font-size: 12px;
+                    height: 20px; 
+                    line-height: 20px; 
+                    overflow: hidden; 
+                    text-align: left;  
+                    text-overflow: ellipsis; 
+                    white-space: nowrap; 
+                    width: 100%; 
+                }
+                .mute:last-child{
+                    box-shadow: none;
+                }
+                .mute:hover{
+                    background: rgba(96,96,96,0.7);
+                    font-size: 12px;
+                }
+                .mute:before{
+                    margin: 0 5px;
+                }
+            }
+        }
+    
+        .modelcontrol { 
+            color: $bgwhite; 
+            float: right;
+            font-size: 12px;
+            height: 12px; 
+            font-size: 12px; 
+            line-height: 12px; 
+            position: relative; 
+            margin-top: 17px; 
+            margin-right: 10px; 
+            text-align: center; 
+            width: 50px; 
+            .title { 
+                background: none;
+                border: none;
+                cursor: pointer;  
+                color: $bgwhite; 
+                height: 12px; 
+                font-size: 12px; 
+                line-height: 12px; 
+                position: relative; 
+                padding: 0;
+                text-align: center; 
+                width: 50px; 
+            }
+            .modelcontrollist { 
+                border: 1px solid #242424; 
+                background: #242424; 
+                display: none; 
+                line-height: 20px; 
+                width: 50px; 
+                .modelspan { 
+                    box-shadow: 0 1px 0 0 #606060;
+                    cursor: pointer; 
+                    color: $bgwhite; 
+                    float: left; 
+                    font-size: 12px;
+                    height: 20px; 
+                    line-height: 20px; 
+                    overflow: hidden; 
+                    text-align: center;  
+                    text-overflow: ellipsis; 
+                    white-space: nowrap; 
+                    width: 100%; 
+                }
+                .modelspan:hover{
+                    background: rgba(96,96,96,0.7);
+                    font-size: 12px;
+                }
+                .modelspan:last-child{
+                    box-shadow: none;
+                }
+            }
+        }
+        .scroll { 
+    //      border-radius: 5px; 
+            background: $bgwhite; 
+            float: right; 
+            height: 3px; 
+            margin: 21px 15px 0 6px; 
+            position: relative; 
+            width: 55px; 
+            .scrollson { 
+                background: $bgwhite; 
+                border-radius: 50%; 
+                cursor: default; 
+                height: 10px; 
+                position: absolute; 
+                top: -3px; 
+                width: 10px; 
+                z-index: 2; 
+            }
+    //      .scrollson:before { 
+    //          border-radius: 50%; 
+    //          background: $bgwhite; 
+    //          content: ''; 
+    //          height: 10px; 
+    //          position: absolute; 
+    //          width: 10px; 
+    //      }
+    //      .scrollson:after { 
+    //          border-radius: 50%; 
+    //          background: #0084ff; 
+    //          content: ''; 
+    //          height: 6px; 
+    //          left: 2px; 
+    //          position: absolute; 
+    //          top: 2px; 
+    //          width: 6px; 
+    //      }
+            .scrollsonbg { 
+                border-radius: 5px 0 0 5px; 
+                background: #008dcf; 
+                height: 3px; 
+                left: 0; 
+                width: 100%; 
+            }
+        }
+        .knowledge { 
+            background: $bgwhite; 
+            border-radius: 8px; 
+            height: 8px; 
+            overflow: hidden; 
+            position: absolute; 
+            width: 12px; 
+            z-index: 203; 
+    //      .time { 
+    //          font-size: 14px; 
+    //          float: left; 
+    //          height: 20px; 
+    //          line-height: 20px; 
+    //          width: 100%; 
+    //      }
+            .knowledgehover {
+                background: #494a4c;
+                color: $bgwhite;
+                top: -84px; 
+                height: 55px;
+                min-height: 18px; 
+                left: -50px;
+                line-height: 18px; 
+                word-break: break-all;
+                padding: 10px;
+                width: 85px; 
+                position: absolute; 
+                z-index: 30; 
+                .content{
+                    height: 55px;
+                    overflow-x: hidden; 
+                    overflow-y: auto;
+                    width: 85px; 
+                }
+            }
+            .knowledgehover:before{
+                background: #494a4c;
+                bottom: -6px;
+                content: '';
+                height: 10px;
+                left: 50px;
+                position: absolute;
+                transform: rotate(45deg);
+                width: 10px;
+                z-index: -1;
+            }
+        }
+    }
+    .loading { 
+        -webkit-animation: loading 1s linear 0s infinite; 
+        animation: loading 1s linear 0s infinite; 
+        border-width: 5px; 
+        border-color: $color000 $bgwhite; 
+        border-style: solid; 
+        border-radius: 50%; 
+        bottom: 0; 
+        height: 20px; 
+        left: 0; 
+        margin: auto; 
+        position: absolute; 
+        right: 0; 
+        top: 0; 
+        width: 20px; 
+        z-index: 2; 
+    }
+    .error { 
+        bottom: 0; 
+        color: $bgwhite; 
+        display: none; 
+        height: 64px; 
+        left: 0; 
+        margin: auto; 
+        position: absolute; 
+        right: 0; 
+        top: 0; 
+        text-align: center; 
+        width: 64px; 
+    }
+}
+@-moz-keyframes loading { from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes loading { from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); } }
+@-ms-keyframes loading { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
+@keyframes loading { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }

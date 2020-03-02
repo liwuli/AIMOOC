@@ -1,0 +1,68 @@
+@charset "UTF-8";
+#playerArealocal { background: #000; bottom: 0; height: 100%; left: 0; margin: 0 auto; overflow: hidden; position: relative; right: 0; top: 0; width: 100%; }
+#playerArealocal div { position: relative; float: left; }
+#playerArealocal video { position: absolute; z-index: 1; }
+#playerArealocal video::-webkit-media-controls-enclosure { /*禁用播放器控制栏的样式*/ display: none !important; }
+#playerArealocal video:-webkit-full-screen { z-index: -1; }
+#playerArealocal .bigplay, #playerArealocal .playlogo { position: absolute; z-index: 10; }
+#playerArealocal .bigplay { bottom: 0; color: #fff; cursor: pointer; font-size: 46px; height: 46px; left: 0; margin: auto; right: 0; top: 0; width: 46px; }
+#playerArealocal .font { bottom: 80px; font-size: 12px; color: #fff; line-height: 20px; margin-left: 1%; position: absolute; text-align: center; width: 98%; z-index: 10; }
+#playerArealocal .list { border: 1px solid #666; border-bottom: none; position: relative; overflow: hidden; z-index: 1; }
+#playerArealocal .list object, #playerArealocal .list embed { float: left; height: 100%; position: relative; width: 100%; z-index: 1; }
+#playerArealocal .list .title { border-bottom: 1px solid #666; background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 14px; height: 30px; line-height: 30px; left: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; position: absolute; padding: 0 1%; top: 0; text-indent: 10px; width: 98%; z-index: 2; }
+#playerArealocal .nosingal { border: 1px solid #666; color: #fff; float: right; text-align: center; }
+#playerArealocal .control { background: rgba(0, 0, 0, 0.5); bottom: 0px; float: left; height: 0px; position: absolute; transition: bottom 0.3s ease-in-out 0s; width: 100%; z-index: 1000000; }
+#playerArealocal .control .play { margin-left: 10px; font-size: 17px; color: #fff; cursor: pointer; float: left; height: 17px; margin-top: 15px; }
+#playerArealocal .control .pause { margin-left: 10px; font-size: 17px; color: #fff; cursor: pointer; float: left; height: 17px; margin-top: 16px; overflow: hidden; }
+#playerArealocal .control .nowtime { color: #fff; font-size: 12px; float: left; height: 25px; line-height: 25px; margin-top: 13px; text-align: center; width: 56px; }
+#playerArealocal .control .totaltime { color: #d3d3d3; font-size: 12px; float: left; height: 25px; line-height: 25px; margin-top: 13px; position: relative; text-align: right; width: 56px; }
+#playerArealocal .control .totaltime:before { content: '/'; position: absolute; left: -8px; height: 25px; margin-left: -2px; top: 0; width: 15px; }
+#playerArealocal .control .timeline:selection { background: none; }
+#playerArealocal .control .timeline { cursor: default; height: 7px; position: absolute; width: 100%; }
+#playerArealocal .control .playinbg, #playerArealocal .control .playin { background: rgba(255, 255, 255, 0.4); height: 8px; left: 0; position: absolute; top: 0; width: 100%; }
+#playerArealocal .control .playin { background: linear-gradient(90deg, #3297fc 70%, #91c8ff); border-radius: 0 5px 5px 0; width: 0; z-index: 201; }
+#playerArealocal .control .playin:before { background: #fff; border-radius: 8px; content: ''; height: 8px; right: 0; position: absolute; top: 0px; width: 8px; }
+#playerArealocal .control .volum, #playerArealocal .control .fullScreen, #playerArealocal .control .outfullScreen, #playerArealocal .control .model { font-size: 13px; color: #fff; cursor: pointer; float: right; height: 13px; margin-top: 16px; position: relative; width: 13px; margin-left: 10px; margin-right: 10px; }
+#playerArealocal .control .fullScreen, #playerArealocal .control .outfullScreen { font-size: 15px; margin-top: 15px; color: #fff; }
+#playerArealocal .control .volumcontrol { color: #fff; float: right; font-size: 12px; height: 12px; font-size: 12px; line-height: 12px; position: relative; margin-top: 17px; margin-right: 10px; text-align: center; width: 80px; }
+#playerArealocal .control .volumcontrol .title { background: none; border: none; cursor: pointer; color: #fff; height: 12px; font-size: 12px; line-height: 12px; position: relative; padding: 0; text-align: center; width: 80px; }
+#playerArealocal .control .volumcontrol .volumcontrollist { border: 1px solid #242424; background: #242424; display: none; line-height: 20px; width: 80px; }
+#playerArealocal .control .volumcontrol .volumcontrollist .mute { box-shadow: 0 1px 0 0 #606060; cursor: pointer; color: #fff; float: left; font-size: 12px; height: 20px; line-height: 20px; overflow: hidden; text-align: left; text-overflow: ellipsis; white-space: nowrap; width: 100%; }
+#playerArealocal .control .volumcontrol .volumcontrollist .selected { background: #3297fc; }
+#playerArealocal .control .volumcontrol .volumcontrollist .mute:last-child { box-shadow: none; }
+#playerArealocal .control .volumcontrol .volumcontrollist .mute:hover { background: #3297fc; font-size: 12px; }
+#playerArealocal .control .volumcontrol .volumcontrollist .mute:before { margin: 0 5px; }
+#playerArealocal .control .modelcontrol { color: #fff; float: right; font-size: 12px; height: 12px; font-size: 12px; line-height: 12px; position: relative; margin-top: 17px; margin-right: 10px; text-align: center; width: 50px; }
+#playerArealocal .control .modelcontrol .title { background: none; border: none; cursor: pointer; color: #fff; height: 12px; font-size: 12px; line-height: 12px; position: relative; padding: 0; text-align: center; width: 50px; }
+#playerArealocal .control .modelcontrol .modelcontrollist { border: 1px solid #242424; background: #242424; display: none; line-height: 20px; width: 50px; }
+#playerArealocal .control .modelcontrol .modelcontrollist .modelspan { box-shadow: 0 1px 0 0 #606060; cursor: pointer; color: #fff; float: left; font-size: 12px; height: 20px; line-height: 20px; overflow: hidden; text-align: center; text-overflow: ellipsis; white-space: nowrap; width: 100%; }
+#playerArealocal .control .modelcontrol .modelcontrollist .selected { background: #3297fc; }
+#playerArealocal .control .modelcontrol .modelcontrollist .modelspan:hover { background: #3297fc; font-size: 12px; }
+#playerArealocal .control .modelcontrol .modelcontrollist .modelspan:last-child { box-shadow: none; }
+#playerArealocal .control .playcontrol { color: #fff; float: right; font-size: 12px; height: 12px; font-size: 12px; line-height: 12px; position: relative; margin-top: 17px; margin-right: 10px; text-align: center; width: 50px; }
+#playerArealocal .control .playcontrol .title { background: none; border: none; cursor: pointer; color: #fff; height: 12px; font-size: 12px; line-height: 12px; position: relative; padding: 0; text-align: center; width: 50px; }
+#playerArealocal .control .playcontrol .playcontrollist { border: 1px solid #242424; background: #242424; display: none; line-height: 20px; width: 50px; }
+#playerArealocal .control .playcontrol .playcontrollist .modelspan { box-shadow: 0 1px 0 0 #606060; cursor: pointer; color: #fff; float: left; font-size: 12px; height: 20px; line-height: 20px; overflow: hidden; text-align: center; text-overflow: ellipsis; white-space: nowrap; width: 100%; }
+#playerArealocal .control .playcontrol .playcontrollist .selected { background: #3297fc; }
+#playerArealocal .control .playcontrol .playcontrollist .modelspan:hover { background: #3297fc; font-size: 12px; }
+#playerArealocal .control .playcontrol .playcontrollist .modelspan:last-child { box-shadow: none; }
+#playerArealocal .control .scroll { background: #fff; float: right; height: 3px; margin: 21px 15px 0 6px; position: relative; width: 55px; }
+#playerArealocal .control .scroll .scrollson { background: #fff; border-radius: 50%; cursor: default; height: 10px; position: absolute; top: -3px; width: 10px; z-index: 2; }
+#playerArealocal .control .scroll .scrollsonbg { border-radius: 5px 0 0 5px; background: #008dcf; height: 3px; left: 0; width: 100%; }
+#playerArealocal .control .knowledge { background: #fff; border-radius: 8px; height: 8px; overflow: hidden; position: absolute; width: 12px; z-index: 203; }
+#playerArealocal .control .knowledge .knowledgehover { background: #494a4c; color: #fff; top: -84px; height: 55px; min-height: 18px; left: -50px; line-height: 18px; word-break: break-all; padding: 10px; width: 85px; position: absolute; z-index: 30; }
+#playerArealocal .control .knowledge .knowledgehover .content { height: 55px; overflow-x: hidden; overflow-y: auto; width: 85px; }
+#playerArealocal .control .knowledge .knowledgehover:before { background: #494a4c; bottom: -6px; content: ''; height: 10px; left: 50px; position: absolute; transform: rotate(45deg); width: 10px; z-index: -1; }
+#playerArealocal .loading { -webkit-animation: loading 1s linear 0s infinite; animation: loading 1s linear 0s infinite; border-width: 5px; border-color: #000 #fff; border-style: solid; border-radius: 50%; bottom: 0; height: 20px; left: 0; margin: auto; position: absolute; right: 0; top: 0; width: 20px; z-index: 2; }
+#playerArealocal .error { bottom: 0; color: #fff; display: none; height: 64px; left: 0; margin: auto; position: absolute; right: 0; top: 0; text-align: center; width: 64px; }
+
+@-moz-keyframes loading { from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes loading { from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); } }
+@-ms-keyframes loading { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
+@keyframes loading { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
+
+/*# sourceMappingURL=indexvideo.css.map */

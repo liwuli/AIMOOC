@@ -1,0 +1,626 @@
+$bgwhite:#fff;//内容及title标题背景色
+$Firsttitlehei: 53px;//一级标题高度
+$color45516a: #45516a;//manage left bg
+$color3197fc: #3197fc;//高亮
+$color98b4d9: #98b4d9;//input 边框
+$colorred: #f00; // 红色
+$colord5dfec: #d5dfec;// 图片底色
+$color727272: #727272; // 按钮不可用
+$colorf0f7ff: #f0f7ff;//公告底色
+$colorb1b2b4: #b1b2b4;//章节列表边框
+$colora5afd3: #a5afd3;//评价模板右侧边框颜色
+$colorcecece: #cecece; // 资源管理暂无数据
+$colorf0f8fe: #f0f8fe; //教材管理图片背景
+.Firsttitle{
+    float: left;
+    font-size: 20px;
+    height: $Firsttitlehei;
+    line-height: $Firsttitlehei;
+    text-indent: 20px;
+    width: 100%;
+}
+.M_left{
+    background: $color45516a;
+    float: left;
+    padding: 25px 0;
+    width: 195px;
+    .Manage{
+        float: left;
+        height: 46px;
+        line-height: 46px;
+        position: relative;
+        width: 100%;
+        .iconcss{
+            color: $bgwhite!important;
+            font-size: 21px!important;
+            position: absolute;
+            left:30px;
+            top: 0px;
+            height: 21px;
+            width: 21px;
+            z-index: 2;
+        }
+        a{
+            color: $bgwhite;
+            float: left;
+            font-size: 16px;
+            height: 46px;
+            line-height: 46px;
+            position: relative;
+            text-indent: 68px;
+            width: 100%;
+        }
+        a.active{
+            background: $color3197fc;
+        }
+    }
+}
+.M_right{
+    float: left;
+    height: auto;
+    margin-left: 30px;
+    width: 960px;
+    .teacherchargetitle{
+        float: left;
+        height: 16px;
+        line-height: 16px;
+        margin-top: 24px;
+        width: 100%;
+    }
+    .books{
+        float: left;
+        margin-bottom: 25px;
+        width: 100%;
+        .list{
+            float: left;
+            height: 218px;
+            margin: 25px 10px 25px 0;
+            overflow: hidden;
+            position: relative;
+            width: 300px;
+            .img:hover{
+                border:1px solid $color3197fc;
+            }
+            .img{
+                border:1px solid $bgwhite;
+                background: $colorf0f8fe;
+                float: left;
+                height: 165px;
+                line-height: 165px;
+                position: relative;
+                text-align: center;
+                width: 128px;
+                z-index: 1;
+            }
+            img{
+                height: 165px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 128px;
+                z-index: 2;
+            }
+            .txtlist{
+                height: 165px;
+                float: left;
+                position: relative;
+                width: 170px;
+                .name{
+                    float: left;
+                    height: 14px;
+                    line-height: 14px;
+                    margin-bottom: 7px;
+                    text-indent: 20px;
+                    width: 100%;
+                }
+                .editor{
+                    float: left;
+                    height: 30px;
+                    line-height: 30px;
+                    max-height: 60px;
+                    overflow: hidden;
+                    text-indent: 20px;
+                    width: 100%;
+                }
+                .edit,.del{
+                    bottom: 0;
+                    height: 16px;
+                    left: 20px;
+                    position: absolute;
+                    width: 16px;
+                }
+                .del{
+                    left: 56px;
+                }
+            }
+            input[type=file]{
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                z-index: 2;
+            }
+            .fileback{
+                border: 1px solid $color3197fc;
+                bottom: 0;
+                color: $color3197fc;
+                height: 28px;
+                line-height: 28px;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                width: 128px;
+                z-index: 1;
+            }
+        }
+    }
+    .teamcharge {
+        border-bottom: 1px solid $color98b4d9;
+        float: left;
+        margin-bottom: 11px;
+        width: 100%;
+        .list{
+            float: left;
+            height: 70px;
+            margin: 25px 0;
+            position: relative;
+            width: 230px;
+            overflow: hidden;
+            .img{
+                background: $colorf0f8fe;
+                border-radius: 50%;
+                float: left;
+                height: 70px;
+                width: 70px;
+            }
+            img{
+                border-radius: 50%;
+                float: left;
+                height: 70px;
+                width: 70px;
+            }
+            .text{
+                float: left;
+                line-height: 70px;
+                max-width: 160px;
+                text-indent: 20px;
+            }
+            .del{
+                font-size: 12px;
+                position: absolute;
+                right: 10px;
+                top: 0;
+            }
+        }
+    }
+    .nodata{
+        color: $colorcecece;
+        font-size: 16px;
+        float: left;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .evaluatehead{
+        // 后台评价模板管理部分
+        border: 1px solid $colord5dfec;
+        height: 32px;
+        line-height: 32px;
+        .item{
+            box-shadow: 1px 0 0 0 $colora5afd3;
+            float: left;
+            line-height: 32px;
+        }
+    }
+    .evaluatelist{
+        float: left;
+        height: 37px;
+        line-height: 37px;
+        position: relative;
+        width: 100%;
+        .text{
+            float: left;
+            height: 37px;
+            line-height: 37px;
+            text-indent: 40px;
+            width: 80%;
+        }
+        .evaluateopt{
+            float: left;
+            height: 37px;
+            line-height: 37px;
+            width: 20%;
+            .edit,.del{
+                cursor: pointer;
+                font-size: 15px;
+                float: left;
+                margin-left: 20px;
+            }
+        }
+    }
+    .formline{
+        float: left;
+        min-height: 30px;
+        line-height: 30px;
+        margin-top: 25px;
+        position: relative;
+        width: 100%;
+        .txt{
+            float: left;
+            font-size: 16px;
+            min-height: 30px;
+            min-width: 100px;
+            text-indent: 17px;
+            .red{
+                color: $colorred;
+            }
+        }
+        .selectbtn{
+            border:1px solid $color3197fc;
+            color: $color3197fc;
+            cursor: pointer;
+            border-radius: 0;
+            height: 28px;
+            line-height: 28px;
+            left: 100px;
+            padding: 0 5px;
+            position: absolute;
+            text-align: center;
+            z-index: 1;
+            width: 100px;
+        }
+        .input{
+            border:1px solid $color98b4d9;
+            border-radius: 0;
+            height: 28px;
+            line-height: 28px;
+            padding: 0 5px;
+            position: relative;
+            width: 288px;
+            z-index: 2;
+        }
+        .textarea{
+            border:1px solid $color98b4d9;
+            border-radius: 0;
+            height: 158px;
+            line-height: 28px;
+            padding: 0 5px;
+            width: 693px;
+            resize: none;
+        }
+        #imgPreview{
+            background: $colord5dfec;
+            height:124px;
+            margin-left: 100px;
+            width:220px; 
+        }
+    }
+    .mrightsave{
+        background: $color3197fc;
+        color: $bgwhite;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        margin: 148px 0 0 430px;
+        text-align: center;
+        width: 90px;
+    }
+    .mrightcreate{
+        background: $bgwhite;
+        border:1px solid $color3197fc;
+        color: $color3197fc;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 10px;
+        text-align: center;
+        width: 120px;
+    }
+    .gray{
+        background: $color727272;
+        border:1px solid $color727272;
+        color: $bgwhite;
+    }
+    .mrightsaveres{
+        background: $color3197fc;
+        border:1px solid $color3197fc;
+        color: $bgwhite;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 10px;
+        text-align: center;
+        width: 90px;
+    }
+    .mrightnoticelist{
+        float: left;
+        margin-top: 25px;
+        margin-left: 10px;
+        position: relative;
+        width: 950px;
+        .titleline{
+            float: left;
+            height: 18px;
+            line-height: 18px;
+            margin-bottom: 8px;
+            width: 100%;
+            span{
+                float: left;
+            }
+            span.title{
+                margin-left: 10px;
+            }
+        }
+        .content{
+            background: $colorf0f7ff;
+            float: left;
+            min-height: 90px;
+            padding: 25px 25px 35px 25px;
+            word-break: break-all;
+            width: 900px;
+            .title{
+                float: left;
+                font-size: 15px;
+                height: 15px;
+                line-height: 15px;
+                margin-bottom: 22px;
+                width: 100%;
+            }
+            .infos{
+                float: left;
+                font-size: 14px;
+                height: 24px;
+                line-height: 24px;
+                overflow: hidden;
+                width: 100%;
+                table{
+                    box-shadow: 0 0 0 1px $colorcecece inset;
+                }
+                tr{
+                    box-shadow: 0 1px 0  0 $colorcecece;
+                }
+                tr:last-child{
+                    box-shadow: none !important;
+                }
+                td,th{
+                    box-shadow: 1px 0  0  0 $colorcecece;
+                }
+                td:last-child{
+                    box-shadow: none !important;
+                }
+                th:last-child{
+                    box-shadow: none !important;
+                }
+            }
+        }
+        .open,.edit,.del{
+            bottom:24px;
+            cursor: pointer;
+            font-size: 19px;
+            position: absolute;
+            right:84px
+        }
+        .edit{
+            right:59px
+        }
+        .del{
+            right:34px
+        }
+    }
+    .optline{
+        float: left;
+        margin-bottom:30px;
+        width: 100%;
+    }
+    .champterlist{
+        background: $colorf0f7ff;
+        float: left;
+        min-height: 460px;
+        margin-left: 10px;
+        width: 260px;
+        .list{
+            box-shadow: 0 0 0 1px $colorb1b2b4;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 1px;
+            position: relative;
+            text-indent: 20px;
+            width: 100%;
+            .iconarr{
+                font-size: 18px;
+                position: absolute;
+                right: 9px;
+                top: 0px;
+            }
+        }
+        .list:hover{
+            color: $color3197fc;
+        }
+    }
+    .champterrightlist{
+        background: $colorf0f7ff;
+        float: left;
+        min-height: 420px;
+        margin-left: 30px;
+        padding: 20px;
+        width: 540px;
+        .list{
+            float: left;
+            height: 37px;
+            line-height: 37px;
+            position: relative;
+            width: 100%;
+            .iconarr{
+                font-size: 15px;
+                position: absolute;
+                left: 10px;
+                top: 0px;
+            }
+            .text{
+                float: left;
+                height: 37px;
+                line-height: 37px;
+                text-indent: 40px;
+                width: 80%;
+            }
+            .champteropt{
+                float: left;
+                height: 37px;
+                line-height: 37px;
+                width: 20%;
+                .publish,.edit,.del{
+                    cursor: pointer;
+                    font-size: 15px;
+                    float: left;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+.formwin {
+    .canvaspart {
+        float: left;
+        position: relative;
+    }
+    .fileup{
+        float: left;
+        opacity: 0;
+        position: relative;
+        width: 90px;
+        z-index: 1000003;
+    }
+    .warntxt{
+        width: 100%;
+        float: left;
+        text-indent: 100px;
+    }
+    .filechoose,.unresaddbtn,.resaddbtn{
+        background: $bgwhite;
+        border:1px solid $color3197fc;
+        color: $color3197fc;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        left: 90px;
+        line-height: 30px;
+        position: absolute;
+        margin-left: 10px;
+        text-align: center;
+        width: 90px;
+        z-index: 1000000;
+    }
+    .unresaddbtn{
+        border:1px solid $color727272;
+        color: $color727272;
+    }
+    .filelist{
+        float: left;
+        min-height: 30px;
+        margin-left: 100px;
+        margin-top: 12px;
+        position: relative;
+        width: 480px;
+        .list{
+            float: left;
+            position: relative;
+            margin-right: 20px;
+            width: 130px;
+            .fileclose{
+                font-size: 14px;
+                position: absolute;
+                right: 0;
+                top: -8px;
+                zoom: 0.5;
+                z-index: 1000005;
+            }
+            .filechoose {
+                left: 0;
+                margin-left:0;
+                width: 130px;
+            }
+        }
+    }
+    .sliderpart{
+        float: left;
+        margin-top: 20px;
+        width: 100%;
+        .progress{
+            float: left;
+            background: #d3d3d3;
+            border-radius: 3px;
+            height: 7px;
+            margin-left: 10px;
+            margin-top: 3px;
+            margin-right: 10px;
+            position: relative;
+            width: 100px;
+        }
+        .innergress {
+            background: #2c9cff;
+            border-radius: 3px;
+            height: 7px;
+            position: relative;
+            width: 0;
+        }
+        .innergress:before{
+            background: #2c9cff;
+            border-radius: 50%;
+            content: '';
+            height: 14px;
+            position: absolute;
+            right: -7px;
+            top: -3px;
+            width: 14px;
+        }
+        .slidericon{
+            color: $colorcecece;
+            font-size: 16px;
+            float: left;
+        }
+    }
+    .mrightcreate{
+        background: $bgwhite;
+        border:1px solid $color3197fc;
+        color: $color3197fc;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 10px;
+        text-align: center;
+        width: 90px;
+    }
+    #realcanvas{
+        position: relative;
+        left: -10000000px;
+    }
+    .canvaspart{
+        background: #f0f7ff;
+        float: left;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        width: 530px;
+    }
+    #canvas,.divcenter {
+        border: 1px solid #404853;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 130px;
+        width: 230px;
+        margin: auto;
+        z-index: 2;
+    }
+    #canvasimg{
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+}

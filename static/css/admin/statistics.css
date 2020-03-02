@@ -1,0 +1,105 @@
+.div1{
+	float: left;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #000000;
+}
+
+.span1 {
+	margin-left: 50px;
+	font-size: 18px;
+	color: #999999;
+	line-height: 50px;
+	font-weight: 550;
+	border-right: 1px solid #000000;
+	padding-right: 15px;
+}
+
+.span2 {
+	margin-left: 15px;
+	font-size: 18px;
+	color: #999999;
+	line-height: 50px;
+	font-weight: 550;
+}
+
+.daochu{
+	float: right;
+	width: 100px;
+	height: 35px;
+	margin-top: 7.5px;
+	margin-right: 23px;
+	font-size: 16px;
+}
+
+.div2{
+	float: left;
+	width: calc(100% - 100px);
+	margin-left: 50px;
+}
+
+.span3{
+	float: left;
+	font-size: 14px;
+	line-height: 33px;
+}
+
+.div3{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-right: 50px;
+	margin-bottom: 20px;
+}
+
+
+.el-input__icon{
+	height: auto!important;
+}
+
+.el-scrollbar{
+	height: auto !important;
+}
+
+.selectsss{
+	margin-top:40px !important;
+}
+
+.selectsss2{
+	margin-top:40px !important;
+}
+
+.btn-prev{
+	padding-left: 10px !important;
+	padding-right: 10px!important;
+}
+
+.btn-next{
+	padding-left: 10px !important;
+	padding-right: 10px!important;
+}
+.el-pagination__jump{
+
+}
+
+.el-pagination span:not([class*=suffix]){
+	display: inline !important;
+}
+
+.pagination1{
+	margin-top: 40px !important;
+}
+
+.el-table__expanded-cell[class*=cell]{
+	padding: 0 !important;
+}
+
+/*
+.el-popper[x-placement^=bottom]{
+	margin-top: 3%;
+}
+
+.el-cascader__dropdown{
+	top:190px !important;
+}
+ */

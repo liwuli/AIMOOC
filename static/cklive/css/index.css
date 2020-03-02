@@ -1,0 +1,33 @@
+@charset "UTF-8";
+#playerAreasee, #playerArea { background: #000; bottom: 0; height: 100%; left: 0; margin: 0 auto; overflow: hidden; position: relative; right: 0; top: 0; width: 100%; }
+#playerAreasee div, #playerArea div { float: left; position: relative; }
+#playerAreasee video, #playerArea video { position: absolute; z-index: 1; }
+#playerAreasee video::-webkit-media-controls-enclosure, #playerArea video::-webkit-media-controls-enclosure { /*禁用播放器控制栏的样式*/ display: none !important; }
+#playerAreasee video:-webkit-full-screen, #playerArea video:-webkit-full-screen { z-index: -1; }
+#playerAreasee .list, #playerArea .list { border: 1px solid #666; border-bottom: none; position: relative; overflow: hidden; z-index: 1; }
+#playerAreasee .list object, #playerAreasee .list embed, #playerArea .list object, #playerArea .list embed { float: left; height: 100%; position: relative; width: 100%; z-index: 1; }
+#playerAreasee .title, #playerArea .title { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; border-bottom: 1px solid #666; background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 14px; height: 30px; line-height: 30px; left: 0; position: absolute; top: 0; width: 100%; z-index: 2; }
+#playerAreasee .title span, #playerArea .title span { float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 80%; }
+#playerAreasee .nosingal, #playerArea .nosingal { border: 1px solid #666; color: #fff; float: right; text-align: center; }
+#playerAreasee .loading, #playerArea .loading { -webkit-animation: loading 1s linear 0s infinite; animation: loading 1s linear 0s infinite; border-width: 5px; border-color: #000 #fff; border-style: solid; border-radius: 50%; bottom: 0; height: 20px; left: 0; margin: auto; position: absolute; right: 0; top: 0; width: 20px; z-index: 2; }
+#playerAreasee .error, #playerArea .error { bottom: 0; color: #fff; display: none; height: 64px; left: 0; margin: auto; position: absolute; right: 0; top: 0; text-align: center; width: 64px; }
+#playerAreasee .mute, #playerArea .mute { cursor: pointer; color: #fff; right: 10px; height: 30px; position: absolute; line-height: 30px; z-index: 100; }
+#playerAreasee .channel, #playerArea .channel {cursor: pointer; color: #fff; font-size: 23px; right: 10px; height: 30px; position: absolute; line-height: 30px; right: 35px; z-index: 100; }
+
+#playerArea .control { background: #f8f8f8; bottom: 0px; min-height: 40px; position: absolute; width: 100%; z-index: 2; }
+#playerArea #V_fullScreen { float: right; margin: 12px; }
+#playerArea #V_volum { float: right; padding: 12px; }
+#playerArea .scroll { background: #777a7f; float: right; height: 100px; position: absolute; padding: 10px 0; right: -50000000px; top: -120px; width: 20px; z-index: 2; }
+#playerArea .scroll .scrollson { background: #3297fc; cursor: default; height: 0px; left: 8px; position: absolute; width: 4px; z-index: 2; }
+#playerArea .scroll .scrollson:before { border-radius: 50%; background: #fff; content: ''; height: 8px; left: -2px; position: absolute; top: -2px; width: 8px; }
+#playerArea .scroll .scrollsonbg { background: #606060; height: 100px; position: absolute; left: 8px; top: 10px; width: 4px; }
+#playerArea .modelcontrol { color: #606060; float: right; font-size: 12px; height: 12px; font-size: 12px; line-height: 12px; position: relative; margin-top: 12px; margin-right: 10px; text-align: center; width: 50px; }
+#playerArea .modelcontrol .title { background: none; border: none; cursor: pointer; color: #141414; height: 12px; font-size: 12px; line-height: 12px; position: relative; padding: 0; text-align: center; width: 50px; }
+#playerArea .modelcontrol .modelcontrollist { background: #242424; display: none; line-height: 20px; position: absolute; top: -12px; width: 50px; z-index: 2; }
+#playerArea .modelcontrol .modelcontrollist .modelspan { box-shadow: 0 1px 0 0 #606060; cursor: pointer; color: #fff; float: left; font-size: 12px; height: 20px; line-height: 20px; overflow: hidden; text-align: center; text-overflow: ellipsis; white-space: nowrap; width: 100%; }
+#playerArea .modelcontrol .modelcontrollist .modelspan:hover { background: rgba(96, 96, 96, 0.7); font-size: 12px; }
+#playerArea .modelcontrol .modelcontrollist .modelspan:last-child { box-shadow: none; }
+
+
+ 
+/*# sourceMappingURL=index.css.map */

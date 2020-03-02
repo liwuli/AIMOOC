@@ -1,0 +1,49 @@
+.el-input__icon{
+	height: auto!important;
+}
+
+.el_selects_css{
+	margin-top:45px !important;
+  z-index: 999999999 !important;
+}
+
+.el-input__icon{
+  float: left;
+ }
+
+.txt{
+  line-height: 32px ;
+}
+
+.el-pagination span:not([class*=suffix]){
+	display: inline !important;
+}
+
+.pagination1{
+	margin-top: 40px !important;
+}
+
+.btn-prev{
+	padding-left: 10px !important;
+	padding-right: 10px!important;
+}
+
+.btn-next{
+	padding-left: 10px !important;
+	padding-right: 10px!important;
+}
+
+.el-transfer-panel__list.is-filterable{
+  float: left;
+  margin-top: 5px;
+  height: 500px;
+}
+
+.el-transfer-panel__item{
+  display: block !important;
+}
+
+.el-transfer-panel {
+  width: 422px !important;
+  height: 500px;
+  }

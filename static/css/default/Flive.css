@@ -1,0 +1,117 @@
+@charset "UTF-8";
+.livecenter { float: left; height: 40px; margin: 30px 0 7px 0; position: relative; width: 100%; }
+.livecenter .span { cursor: pointer; font-size: 18px; float: left; height: 40px; line-height: 40px; min-width: 97px; text-align: center; }
+.livecenter .spansmall { cursor: pointer; font-size: 16px; float: left; height: 40px; line-height: 40px; min-width: 97px; text-align: center; }
+.livecenter .searchinput { box-shadow: 0 0 0 1px #8a9cc2; border: none; background: #fff; font-size: 12px; height: 28px; line-height: 28px; position: absolute; padding: 0 5px; right: 80px; top: 5px; width: 202px; }
+.livecenter .searchbtn { box-shadow: 0 0 0 1px #3197fc; background: #fff; color: #3197fc; cursor: pointer; font-size: 12px; height: 28px; line-height: 28px; position: absolute; right: 10px; top: 5px; text-align: center; width: 58px; }
+.livecenter .blue { color: #3197fc; }
+
+.livehead { border-bottom: 1px solid #e6f2ff; float: left; height: 45px; line-height: 45px; margin-bottom: 20px; width: 100%; }
+.livehead .headicon { float: left; font-size: 16px; height: 16px; width: 16px; }
+.livehead .txt { float: left; margin-left: 10px; line-height: 45px; width: auto; }
+.livehead .blue { color: #3197fc; }
+.livehead .green { color: #37c235; }
+.livehead .yellow { color: #eaac1d; }
+.livehead .right { float: right; }
+.livehead .right .more { border-left: 1px solid #141414; cursor: pointer; height: 16px; line-height: 16px; margin-top: 15px; padding-left: 10px; }
+
+.livetab { box-shadow: 0 0 0 1px #e6e6e6 inset; background: #f8f8f8; float: left; height: 40px; margin: 30px 0; position: relative; width: 100%; }
+.livetab .span { box-shadow: -1px 0 0 0 #e6e6e6 inset; cursor: pointer; float: left; height: 40px; line-height: 40px; min-width: 97px; text-align: center; }
+.livetab .selected { box-shadow: -1px 0 0 0 #3197fc inset; background: #3197fc; color: #fff; height: 20px; line-height: 20px; padding: 10px 0; }
+.livetab .searchinput { box-shadow: 0 0 0 1px #8a9cc2; border: none; background: #fff; font-size: 12px; height: 28px; line-height: 28px; position: absolute; padding: 0 5px; right: 80px; top: 5px; width: 202px; }
+.livetab .searchbtn { box-shadow: 0 0 0 1px #3197fc; background: #fff; color: #3197fc; cursor: pointer; font-size: 12px; height: 28px; line-height: 28px; position: absolute; right: 10px; top: 5px; text-align: center; width: 58px; }
+
+.livepink { float: left; height: 15px; line-height: 15px; margin-bottom: 20px; position: relative; width: 100%; }
+.livepink .span { cursor: pointer; float: left; height: 15px; line-height: 15px; margin-left: 15px; width: auto; }
+.livepink .selected { color: #3197fc; }
+
+.unlivesearch { float: left; height: 25px; line-height: 25px; margin-bottom: 20px; position: relative; width: 100%; }
+.unlivesearch .to { float: left; height: 25px; line-height: 25px; margin: 0 10px; }
+.unlivesearch .searchtxt { float: left; height: 25px; line-height: 25px; margin: 0 20px 0 0; }
+.unlivesearch .icon { margin-left: -30px; }
+.unlivesearch .searchbtn { box-shadow: 0 0 0 1px #3197fc; background: #fff; color: #3197fc; cursor: pointer; font-size: 12px; height: 28px; line-height: 28px; position: absolute; right: 10px; top: -2px; text-align: center; width: 58px; }
+
+.livelist { background: #f2f2f2; float: left; min-height: 202px; margin-right: 20px; margin-bottom: 20px; overflow: hidden; position: relative; width: 260px; }
+.livelist .img { background: #f0f7ff; float: left; height: 147px; width: 100%; }
+.livelist .img img { height: 147px; width: 260px; }
+.livelist .name { float: left; font-size: 12px; height: 16px; line-height: 16px; margin: 8px 0 7px 0; padding: 0 3%; width: 94%; }
+.livelist .name:hover { color: #3197fc; }
+.livelist .half { float: left; font-size: 12px; height: 12px; line-height: 12px; padding-left: 3%; width: 47%; }
+.livelist .half .halficon { color: #606060; float: left; font-size: 12px; height: 12px; width: 12px; }
+.livelist .half .txt { color: #606060; float: left; height: 12px; line-height: 12px; margin-left: 3px; display: flex;align-items: center;}
+.livelist .halfright { float: right; font-size: 12px; height: 12px; line-height: 12px; padding-right: 3%; max-width: 47%; }
+.livelist .halfright .halficon { color: #606060; float: left; font-size: 12px; height: 12px; width: 12px; }
+.livelist .halfright .txt { color: #606060; float: left; height: 12px; line-height: 12px; margin-left: 3px;  display: flex;align-items: center;}
+.livelist .bluepart, .livelist .greenpart, .livelist .yellowpart { color: #fff; font-size: 12px; height: 30px; line-height: 30px; left: -107px; position: absolute; transform: rotate(-45deg); transform-origin: center; text-align: center; top: 10px; width: 100%; }
+.livelist .bluepart { background: rgba(61, 139, 224, 0.8); }
+.livelist .greenpart { background: rgba(18, 157, 16, 0.8); }
+.livelist .yellowpart { background: rgba(235, 188, 74, 0.8); }
+
+.liveback { float: left; cursor: default; font-size: 17px; height: 20px; line-height: 20px; margin-top: 26px; width: 100%; }
+
+.liveuserinfo { float: right; height: 14px; line-height: 14px; margin-top: -4px 0 20px 0; width: 240px; }
+.liveuserinfo .pinkuser { float: left; line-height: 14px; max-width: 170px; overflow: hidden; }
+.liveuserinfo .users { float: right; max-width: 80px; overflow: hidden; width: auto; }
+.liveuserinfo .users .usericon { font-size: 14px; float: left; height: 14px; line-height: 14px; width: 14px; }
+.liveuserinfo .users .txt { float: left; line-height: 14px; margin-left: 10px; max-width: 60px; overflow: hidden; }
+
+.livedetailcenter { float: left; height: 570px; margin-top: 20px; width: 100%; }
+.livedetailcenter .liveplayer { float: left; height: 527px; position: relative; overflow: hidden; width: 854px; }
+.livedetailcenter .favirate { bottom: 20px; cursor: pointer; float: left; height: 14px; left: 10px; position: absolute; width: 70px; z-index: 3; }
+.livedetailcenter .favirate .staricon { color: #eab42e; font-size: 14px; float: left; height: 14px; width: 14px; }
+.livedetailcenter .favirate .txt { float: left; height: 14px; line-height: 14px; margin-left: 10px; width: auto; }
+
+.livedetailcenter .download { bottom: 20px; cursor: pointer; float: left; height: 14px; left: 80px; position: absolute; width: 70px; z-index: 3; }
+.livedetailcenter .download .staricon { font-size: 14px; float: left; height: 14px; width: 14px; }
+.livedetailcenter .download .txt { float: left; height: 14px; line-height: 14px; margin-left: 10px; width: auto; }
+
+.livedetailcenter .danmu { background: #3197fc; border-radius: 8px; bottom: 21px; cursor: pointer; float: right; height: 16px; overflow: hidden; position: absolute; right: 154px; width: 28px; z-index: 2; }
+.livedetailcenter .danmu .danmusub { background: #fff; border-radius: 50%; cursor: pointer; font-size: 12px; height: 14px; line-height: 12px; position: absolute; right: 13px; text-align: center; top: 1px; width: 14px; }
+.livedetailcenter .danmu .danmusub:before { font-size: 12px; content: '弹'; height: 10px; left: 1px; position: absolute; top: 1px; transform: scale(0.8); width: 10px; }
+.livedetailcenter .danmuinfo { color: #fff; height: 20px; line-height: 20px; position: absolute; right: 0; top: 0; z-index: 2; }
+@keyframes leftright { from { right: -500; }
+  to { right: 100%; } }
+.livedetailcenter .chatpart { box-shadow: 0 0 0 1px #98b4d9; float: right; height: 523px; overflow: hidden; position: relative; width: 240px; }
+.livedetailcenter .chatpart .title { float: left; height: 32px; line-height: 32px; box-shadow: 0 1px 0 0 #98b4d9; padding: 0 10px; position: relative; width: 220px; }
+.livedetailcenter .chatpart .title .forbid { cursor: pointer; font-size: 12px; height: 12px; line-height: 12px; position: absolute; right: 8px; top: 10px; width: auto; }
+.livedetailcenter .chatpart .title .lockpart { box-shadow: 0 0 0 1px #98b4d9 inset; background: #fff; border-radius: 5px; bottom: -28px; cursor: pointer; display: none; height: 28px; position: absolute; right: 0; width: 116px; z-index: 5; }
+.livedetailcenter .chatpart .title .lockpart .half { float: left; height: 18px; line-height: 18px; margin: 5px 0; box-shadow: 1px 0 0 0 #98b4d9; width: 50%; }
+.livedetailcenter .chatpart .title .lockpart .half .halficon { color: inherit; float: left; font-size: 12px; line-height: 18px; margin-left: 8px; }
+.livedetailcenter .chatpart .title .lockpart .half:hover { color: #3197fc; }
+.livedetailcenter .chatpart .forbitpart { bottom: 0; left: 0; height: 78px; position: absolute; width: 240px; z-index: 3; }
+.livedetailcenter .chatpart .forbitpart .txt { float: left; font-size: 12px; height: 12px; line-height: 12px; margin: 31px 0 0 11px; width: auto; }
+.livedetailcenter .chatpart .forbitpart .blue { color: #3197fc; cursor: pointer; float: left; font-size: 12px; height: 12px; line-height: 12px; margin: 31px 0 0 0px; width: auto; }
+.livedetailcenter .chatpart #forbidlist { background: #fff; height: 489px; left: 0; overflow: hidden; position: absolute; padding: 0 10px; top: 33px; width: 220px; z-index: 5; }
+.livedetailcenter .chatpart #forbidlist .search { box-shadow: 0 0 0 1px #98b4d9; float: left; height: 26px; line-height: 26px; margin-top: 10px; position: relative; width: 100%; }
+.livedetailcenter .chatpart #forbidlist .search .input { border: none; float: left; line-height: inherit; height: inherit; padding: 0 7px; width: 180px; }
+.livedetailcenter .chatpart #forbidlist .search .searchbtn { background: #f9f9f9; float: left; height: 26px; width: 25px; }
+.livedetailcenter .chatpart #forbidlist .search .searchbtn .searchicon { font-size: 15px; margin-left: 5px; }
+.livedetailcenter .chatpart #forbidlist #forbidscroll { width: 220px; }
+.livedetailcenter .chatpart #forbidlist #forbidscroll .forbidlist { box-shadow: 0 1px 0 0 #e0e8f3; float: left; height: 30px; padding: 10px 0; width: 100%; }
+.livedetailcenter .chatpart #forbidlist #forbidscroll .forbidlist .img { background: #98b4d9; border-radius: 50%; float: left; height: 30px; margin: 0 10px; width: 30px; }
+.livedetailcenter .chatpart #forbidlist #forbidscroll .forbidlist .img img { border-radius: 50%; float: left; height: 30px; width: 30px; }
+.livedetailcenter .chatpart #forbidlist #forbidscroll .forbidlist .forbidusername { float: left; font-size: 12px; height: 30px; line-height: 30px; margin-right: 10px; width: 90px; }
+.livedetailcenter .chatpart #forbidlist #forbidscroll .forbidlist .unlockforbid { color: #3197fc; cursor: pointer; float: left; font-size: 12px; height: 30px; line-height: 30px; width: auto; }
+.livedetailcenter .chatpart #forbidlist .forbidbtn { background: #3197fc; color: #fff; cursor: pointer; float: left; height: 26px; line-height: 26px; margin: 20px 0 0 20px; text-align: center; width: 80px; }
+.livedetailcenter .chatpart #livechat { box-shadow: 0 1px 0 0 #98b4d9; float: left; height: 479px; padding: 0 5px; width: 230px; }
+.livedetailcenter .chatpart #livechat .chatlist { box-shadow: 0 1px 0 0 #e0e8f3; float: left; padding: 10px 0; position: relative; width: 100%; }
+.livedetailcenter .chatpart #livechat .chatlist .del { font-size: 12px; bottom: 10px; position: absolute; right: 5px; z-index: 4; }
+.livedetailcenter .chatpart #livechat .chatlist .headline { float: left; height: 14px; line-height: 14px; margin-bottom: 4px; width: 100%; }
+.livedetailcenter .chatpart #livechat .chatlist .headline .headicon, .livedetailcenter .chatpart #livechat .chatlist .headline .headforbit { font-size: 14px; float: left; height: 14px; margin-right: 10px; width: 14px; }
+.livedetailcenter .chatpart #livechat .chatlist .headline .headforbit { color: #3197fc; cursor: pointer; font-size: 12px; margin-left: 10px; width: auto; }
+.livedetailcenter .chatpart #livechat .chatlist .headline .bellcolor { color: #eaad1e; }
+.livedetailcenter .chatpart #livechat .chatlist .headline .mastercolor { color: #f05d3c; }
+.livedetailcenter .chatpart #livechat .chatlist .headline .blulecolor { color: #3197fc; }
+.livedetailcenter .chatpart #livechat .chatlist .headline .headtxt { font-size: 12px; float: left; line-height: 14px; max-width: 150px; }
+.livedetailcenter .chatpart #livechat .chatlist .headline .headdate { color: #606060; float: right; font-size: 12px; line-height: 14px; text-align: center; width: 36px; }
+.livedetailcenter .chatpart #livechat .chatlist .content { font-size: 13px; float: right; line-height: 20px; word-break: break-all; margin-right: 24px; width: 183px; }
+.livedetailcenter .chatpart .num { font-size: 12px; bottom: 10px; right: 65px; position: absolute; }
+.livedetailcenter .chatpart .textareas { border: 1px solid #98b4d9; float: left; height: 38px; margin-left: 5px; overflow-y: auto; overflow-x: hidden; word-break: break-all; word-wrap: break-word; vertical-align: middle; width: 170px; }
+.livedetailcenter .chatpart .send, .livedetailcenter .chatpart .sendblue { background: #d3d3d3; color: #6a6a6a; cursor: pointer; float: left; height: 40px; line-height: 40px; margin-left: 5px; text-align: center; width: 50px; }
+.livedetailcenter .chatpart .sendblue { background: #3197fc; color: #fff; }
+.livedetailcenter .chatpart .emotion { cursor: pointer; float: left; height: 20px; margin: 5px 0 5px 0; width: 100%; }
+.livedetailcenter .chatpart .emotion:hover { color: #eaad1e; }
+.livedetailcenter .chatpart .emotions { border-top: 1px solid #98b4d9; background: #fff; display: none; float: left; position: absolute; top: 248px; width: 240px; z-index: 99; }
+.livedetailcenter .chatpart .emotions img { float: left; height: 24px; width: 24px; }
+
+/*# sourceMappingURL=Flive.css.map */

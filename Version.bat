@@ -1,0 +1,1 @@
+subwcrev.exe %~dp0 %~dp0Create_Version.h  %~dp0Dynamic_Version.h

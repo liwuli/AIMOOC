@@ -1,0 +1,758 @@
+$bgwhite:#fff;//内容及title标题背景色
+$colorf8f8f8: #f8f8f8; // tab
+$colore6e6e6: #e6e6e6; // tab boxshadow
+$color3197fc: #3197fc;//high light
+$colorf2f2f2: #f2f2f2; // list bg
+$colorf0f7ff: #f0f7ff; // imgbg
+$color606060: #606060;// halficon
+$color8a9cc2:#8a9cc2; // input border search
+$color37c235: #37c235; // 即将开播
+$coloreaac1d: #eaac1d; // 回看
+$colore6f2ff: #e6f2ff; // head borderbottom
+$color141414:#141414;
+$color98b4d9: #98b4d9; //直播中心聊天边线
+$colore0e8f3: #e0e8f3; // 直播中心聊天列表边线
+$coloreaad1e: #eaad1e; // 直播中心系统图标颜色
+$colorf05d3c: #f05d3c; // 主讲图标颜色
+$color6a6a6a: #6a6a6a; // 发送按钮
+$colord3d3d3: #d3d3d3; // 发送按钮背景色
+$colorf9f9f9: #f9f9f9; // 禁言search背景色
+$coloreab42e:#eab42e; // 收藏颜色
+.livecenter{
+    float: left;
+    height: 40px;
+    margin: 30px 0 7px 0;
+    position: relative;
+    width: 100%;
+    .span{
+        cursor: pointer;
+        font-size: 18px;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        min-width: 97px;
+        text-align: center;
+    }
+    .spansmall{
+        cursor: pointer;
+        font-size: 16px;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        min-width: 97px;
+        text-align: center;
+    }
+    .searchinput{
+        box-shadow: 0 0 0 1px $color8a9cc2;
+        border:none;
+        background: $bgwhite;
+        font-size: 12px;
+        height: 28px;
+        line-height: 28px;
+        position: absolute;
+        padding: 0 5px;
+        right: 80px;
+        top: 5px;
+        width: 202px;
+    }
+    .searchbtn{
+        box-shadow: 0 0 0 1px $color3197fc;
+        background: $bgwhite;
+        color: $color3197fc;
+        cursor: pointer;
+        font-size: 12px;
+        height: 28px;
+        line-height: 28px;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        text-align: center;
+        width: 58px;
+    }
+    .blue{
+        color: $color3197fc;
+    }
+}
+.livehead{
+    border-bottom: 1px solid $colore6f2ff;
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    width: 100%;
+    .headicon{
+        float: left;
+        font-size: 16px;
+        height: 16px;
+        width: 16px;
+    }
+    .txt{
+        float: left;
+        margin-left: 10px;
+        line-height: 45px;
+        width: auto;
+    }
+    .blue{
+        color: $color3197fc;
+    }
+    .green{
+        color: $color37c235
+    }
+    .yellow{
+        color:$coloreaac1d
+    }
+    .right{
+        float: right;
+        .more{
+            border-left: 1px solid $color141414;
+            cursor: pointer;
+            height: 16px;
+            line-height: 16px;
+            margin-top: 15px;
+            padding-left: 10px;
+        }
+    }
+}
+.livetab{
+    box-shadow: 0 0 0 1px $colore6e6e6 inset;
+    background: $colorf8f8f8;
+    float: left;
+    height: 40px;
+    margin: 30px 0;
+    position: relative;
+    width: 100%;
+    .span{
+        box-shadow: -1px 0 0 0 $colore6e6e6 inset;
+        cursor: pointer;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        min-width: 97px;
+        text-align: center;
+    }
+    .selected{
+        box-shadow: -1px 0 0 0 $color3197fc inset;
+        background: $color3197fc;
+        color: $bgwhite;
+        height: 20px;
+        line-height: 20px;
+        padding: 10px 0;
+    }
+    .searchinput{
+        box-shadow: 0 0 0 1px $color8a9cc2;
+        border:none;
+        background: $bgwhite;
+        font-size: 12px;
+        height: 28px;
+        line-height: 28px;
+        position: absolute;
+        padding: 0 5px;
+        right: 80px;
+        top: 5px;
+        width: 202px;
+    }
+    .searchbtn{
+        box-shadow: 0 0 0 1px $color3197fc;
+        background: $bgwhite;
+        color: $color3197fc;
+        cursor: pointer;
+        font-size: 12px;
+        height: 28px;
+        line-height: 28px;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        text-align: center;
+        width: 58px;
+    }
+}
+.livepink{
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    .span{
+        cursor: pointer;
+        float: left;
+        height: 15px;
+        line-height: 15px;
+        margin-left: 15px;
+        width: auto;
+    }
+    .selected{
+        color: $color3197fc;
+    }
+}
+.unlivesearch{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    .to{
+        float: left;
+        height: 25px;
+        line-height: 25px;
+        margin: 0 10px;
+    }
+    .searchtxt{
+        float: left;
+        height: 25px;
+        line-height: 25px;
+        margin: 0 20px 0 0;
+    }
+    .icon{
+        margin-left: -30px;
+    }
+    .searchbtn{
+        box-shadow: 0 0 0 1px $color3197fc;
+        background: $bgwhite;
+        color: $color3197fc;
+        cursor: pointer;
+        font-size: 12px;
+        height: 28px;
+        line-height: 28px;
+        position: absolute;
+        right: 10px;
+        top: -2px;
+        text-align: center;
+        width: 58px;
+    }
+}
+.livelist{
+    background: $colorf2f2f2;
+    float: left;
+    min-height: 202px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 260px;
+    .img{
+        background: $colorf0f7ff;
+        float: left;
+        height: 147px;
+        width: 100%;
+        img{
+            height: 147px;
+            width: 260px;
+        }
+    }
+    .name{
+        float: left;
+        font-size: 12px;
+        height: 16px;
+        line-height: 16px;
+        margin: 8px 0 7px 0;
+        padding:0 3% ;
+        width: 94%;
+    }
+    .name:hover{
+        color: $color3197fc;
+    }
+    .half{
+        float: left;
+        font-size: 12px;
+        height: 12px;
+        line-height: 12px;
+        padding-left: 3%;
+        width: 47%;
+        .halficon{
+            color: $color606060;
+            float: left;
+            font-size: 12px;
+            height: 12px;
+            width: 12px;
+        }
+        .txt{
+            color: $color606060;
+            float: left;
+            height: 12px;
+            line-height: 12px;
+            margin-left: 3px;
+        }
+    }
+    .halfright{
+        float: right;
+        font-size: 12px;
+        height: 12px;
+        line-height: 12px;
+        padding-right: 3%;
+        max-width: 47%;
+        .halficon{
+            color: $color606060;
+            float: left;
+            font-size: 12px;
+            height: 12px;
+            width: 12px;
+        }
+        .txt{
+            color: $color606060;
+            float: left;
+            height: 12px;
+            line-height: 12px;
+            margin-left: 3px;
+        }
+    }
+    .bluepart,.greenpart,.yellowpart{
+        color: $bgwhite;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        left:-107px;
+        position: absolute;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        text-align: center;
+        top: 10px;
+        width: 100%;
+        
+    }
+    .bluepart{
+        background: rgba(61, 139, 224, 0.8);
+    }
+    .greenpart{
+        background: rgba(18, 157, 16, 0.8);
+    }
+    .yellowpart{
+        background: rgba(235, 188, 74, 0.8);
+    }
+}
+// 直播详情页
+.liveback{
+    float: left;
+    cursor: default;
+    font-size: 17px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 26px;
+    width: 100%;
+}
+.liveuserinfo{
+    float: right;
+    height: 14px;
+    line-height: 14px;
+    margin-top: -4px 0 20px 0;
+    width: 240px;
+    .pinkuser{
+        float: left;
+        line-height: 14px;
+        max-width: 170px;
+        overflow: hidden;
+    }
+    .users{
+        float: right;
+        max-width: 80px;
+        overflow: hidden;
+        width: auto;
+        .usericon{
+            font-size: 14px;
+            float: left;
+            height: 14px;
+            line-height: 14px;
+            width: 14px;
+        }
+        .txt{
+            float: left;
+            line-height: 14px;
+            margin-left: 10px;
+            max-width: 60px;
+            overflow: hidden;
+        }
+    }
+}
+.livedetailcenter{
+    float: left;
+    height: 570px;
+    margin-top: 20px;
+    width: 100%;
+    .liveplayer{
+        float: left;
+        height: 527px;
+        position: relative;
+        overflow: hidden;
+        width: 854px;
+    }
+    .favirate{
+        bottom: 20px;
+        cursor: pointer;
+        float: left;
+        height: 14px;
+        left: 10px;
+        position: absolute;
+        width: 70px;
+        z-index: 3;
+        .staricon{
+            color: $coloreab42e;
+            font-size: 14px;
+            float: left;
+            height: 14px;
+            width: 14px;
+        }
+        .txt{
+            float: left;
+            height: 14px;
+            line-height: 14px;
+            margin-left: 10px;
+            width: auto;
+        }
+    }
+    .danmu{
+        background: #3197fc;
+        border-radius: 8px;
+        bottom: 21px;
+        cursor: pointer;
+        float: right;
+        height: 16px;
+        overflow: hidden;
+        position: absolute;
+        right: 154px;
+        width: 28px;
+        z-index: 2;
+        .danmusub{
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 12px;
+            height: 14px;
+            line-height: 12px;
+            position: absolute;
+            right: 13px;
+            text-align: center;
+            top: 1px;
+            width: 14px;
+        }
+        .danmusub:before{
+            font-size: 12px;
+            content: '弹';
+            height: 10px;
+            left: 1px;
+            position: absolute;
+            top: 1px;
+            transform: scale(0.8);
+            width: 10px;
+        }
+    }
+    .danmuinfo{
+//      animation: leftright 8s linear 0s;
+        color: #fff;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+    @keyframes leftright{
+        from{right: -500;}
+        to{right:100%}
+    }
+    .chatpart{
+        box-shadow: 0 0 0 1px $color98b4d9;
+        float: right;
+        height: 523px;
+        overflow: hidden;
+        position: relative;
+        width: 240px;
+        .title{
+            float: left;
+            height: 32px;
+            line-height: 32px;
+            box-shadow: 0 1px 0 0 $color98b4d9;
+            padding: 0 10px;
+            position: relative;
+            width: 220px;
+            .forbid{
+                cursor: pointer;
+                font-size: 12px;
+                height: 12px;
+                line-height: 12px;
+                position: absolute;
+                right: 8px;
+                top: 10px;
+                width: auto;
+            }
+            .lockpart{
+                box-shadow: 0 0 0 1px $color98b4d9 inset;
+                background: $bgwhite;
+                border-radius: 5px;
+                bottom: -28px;
+                cursor: pointer;
+                display: none;
+                height: 28px;
+                position: absolute;
+                right: 0;
+                width: 116px;
+                z-index: 5;
+                .half{
+                    float: left;
+                    height: 18px;
+                    line-height: 18px;
+                    margin: 5px 0;
+                    box-shadow: 1px 0 0 0 $color98b4d9;
+                    width: 50%;
+                    .halficon{
+                        color: inherit;
+                        float: left;
+                        font-size: 12px;
+                        line-height: 18px;
+                        margin-left: 8px;
+                    }
+                }
+                .half:hover{
+                    color: $color3197fc;
+                }
+            }
+        }
+        .forbitpart{
+            bottom: 0;
+            left: 0;
+            height: 78px;
+            position: absolute;
+            width: 240px;
+            z-index: 3;
+            .txt{
+                float: left;
+                font-size: 12px;
+                height: 12px;
+                line-height: 12px;
+                margin: 31px 0 0 11px;
+                width: auto;
+            }
+            .blue{
+                color: $color3197fc;
+                cursor: pointer;
+                float: left;
+                font-size: 12px;
+                height: 12px;
+                line-height: 12px;
+                margin: 31px 0 0 0px;
+                width: auto;
+            }
+        }
+        #forbidlist{
+            background: $bgwhite;
+            height: 489px;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            padding:0 10px;
+            top: 33px;
+            width: 220px;
+            z-index: 5;
+            .search{
+                box-shadow: 0 0 0 1px $color98b4d9;
+                float: left;
+                height: 26px;
+                line-height: 26px;
+                margin-top: 10px;
+                position: relative;
+                width: 100%;
+                .input{
+                    border:none;
+                    float: left;
+                    line-height: inherit;
+                    height: inherit;
+                    padding: 0 7px;
+                    width: 180px;
+                }
+                .searchbtn{
+                    background: $colorf9f9f9;
+                    float: left;
+                    height: 26px;
+                    width: 25px;
+                    .searchicon{
+                        font-size: 15px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            #forbidscroll{
+                width: 220px;
+                .forbidlist{
+                    box-shadow: 0 1px 0 0 $colore0e8f3;
+                    float: left;
+                    height: 30px;
+                    padding: 10px 0;
+                    width: 100%;
+                    .img{
+                        background: $color98b4d9;
+                        border-radius: 50%;
+                        float: left;
+                        height: 30px;
+                        margin: 0 10px;
+                        width: 30px;
+                        img{
+                            border-radius: 50%;
+                            float: left;
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+                    .forbidusername{
+                        float: left;
+                        font-size: 12px;
+                        height: 30px;
+                        line-height: 30px;
+                        margin-right: 10px;
+                        width: 90px;
+                    }
+                    .unlockforbid{
+                        color: $color3197fc;
+                        cursor: pointer;
+                        float: left;
+                        font-size: 12px;
+                        height: 30px;
+                        line-height: 30px;
+                        width: auto;
+                    }
+                }
+            }
+            .forbidbtn{
+                background: $color3197fc;
+                color: $bgwhite;
+                cursor: pointer;
+                float: left;
+                height: 26px;
+                line-height: 26px;
+                margin: 20px 0 0 20px;
+                text-align: center;
+                width: 80px;
+            }
+        }
+        #livechat{
+            box-shadow: 0 1px 0 0 $color98b4d9;
+            float: left;
+            height: 479px;
+            padding:0 5px;
+            width: 230px;
+            .chatlist{
+                box-shadow: 0 1px 0 0 $colore0e8f3;
+                float: left;
+                padding: 10px 0;
+                position: relative;
+                width: 100%;
+                .del{
+                    font-size: 12px;
+                    bottom: 10px;
+                    position: absolute;
+                    right:5px ;
+                    z-index: 4;
+                }
+                .headline{
+                    float:left;
+                    height: 14px;
+                    line-height: 14px;
+                    margin-bottom: 4px;
+                    width: 100%;
+                    .headicon,.headforbit{
+                        font-size: 14px;
+                        float: left;
+                        height: 14px;
+                        margin-right: 10px;
+                        width: 14px;
+                    }
+                    .headforbit{
+                        color: $color3197fc;
+                        cursor: pointer;
+                        font-size: 12px;
+                        margin-left: 10px;
+                        width: auto;
+                    }
+                    .bellcolor{
+                        color: $coloreaad1e;
+                    }
+                    .mastercolor{
+                        color: $colorf05d3c;
+                    }
+                    .blulecolor{
+                        color: $color3197fc;
+                    }
+                    .headtxt{
+                        font-size: 12px;
+                        float: left;
+                        line-height: 14px;
+                        max-width: 150px;
+                    }
+                    .headdate{
+                        color: $color606060;
+                        float: right;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+                        width: 36px;
+                    }
+                }
+                .content{
+                    font-size: 13px;
+                    float: right;
+                    line-height: 20px;
+                    word-break: break-all;
+                    margin-right: 24px;
+                    width: 183px;
+                }
+            }
+            
+        }
+        .num{
+            font-size: 12px;
+            bottom: 10px;
+            right: 65px;
+            position: absolute;
+        }
+        .textareas{
+            border:1px solid $color98b4d9;
+            float: left;
+            height: 38px;
+            margin-left: 5px;
+            overflow-y:auto;
+            overflow-x:hidden ;
+            word-break: break-all;
+            word-wrap: break-word;
+            vertical-align: middle;
+            width: 170px;
+        }
+        .send,.sendblue{
+            background: $colord3d3d3;
+            color: $color6a6a6a;
+            cursor: pointer;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 5px;
+            text-align: center;
+            width: 50px;
+        }
+        .sendblue{
+            background: $color3197fc;
+            color: $bgwhite;
+        }
+        .emotion{
+            cursor: pointer;
+            float: left;
+            height: 20px;
+            margin: 5px 0 5px 0;
+            width: 100%;
+        }
+        .emotion:hover{
+            color: $coloreaad1e;
+        }
+        .emotions{
+            border-top: 1px solid $color98b4d9;
+            background: $bgwhite;
+            display: none;
+            float: left;
+            position: absolute;
+            top: 248px;
+            width: 240px;   
+        }
+        .emotions img{
+            float: left;
+            height: 24px;
+            width: 24px;
+        }
+    }
+}

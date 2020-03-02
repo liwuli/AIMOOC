@@ -1,0 +1,242 @@
+@charset "UTF-8";
+$color000:#000; // 背景色
+$bgwhite: #fff; // 
+$color666:#666; //边线颜色
+$color3297fc: #3297fc; // 渐变左侧
+$color91c8ff:#91c8ff; // 渐变右侧
+$colorf8f8f8: #f8f8f8;//control bg
+$color777a7f:#777a7f;
+$color606060: #606060;
+$color707070:#141414;
+#playerAreasee,#playerArea {
+    background: $color000; 
+    bottom: 0; 
+    height: 100%; 
+    left: 0; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    position: relative; 
+    right: 0; 
+    top: 0; 
+    width: 100%; 
+    div{
+        float: left;
+        position: relative; 
+    }
+    video{
+        position: absolute; 
+        z-index: 1;
+    }
+    video::-webkit-media-controls-enclosure { 
+        /*禁用播放器控制栏的样式*/ 
+        display: none !important; 
+    }
+    video:-webkit-full-screen { 
+        z-index: -1; 
+    }
+    .list { 
+        border: 1px solid $color666; 
+        border-bottom: none; 
+        position: relative; 
+        overflow: hidden;
+        z-index: 1;
+        object, embed{
+            float: left; 
+            height: 100%; 
+            position: relative; 
+            width: 100%; 
+            z-index: 1;
+        }
+    }
+    .title {
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; 
+        border-bottom: 1px solid $color666; 
+        background: rgba(0, 0, 0, 0.6); 
+        color: $bgwhite; 
+        font-size: 14px; 
+        height: 30px; 
+        line-height: 30px; 
+        left: 0; 
+        position: absolute; 
+        top: 0; 
+        width: 100%; 
+        z-index: 2; 
+        span{
+            float: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 80%;
+        }
+    }
+    .nosingal{
+        border: 1px solid $color666;
+        color: $bgwhite;
+        float: right; 
+        text-align: center; 
+    }
+    .loading{
+        -webkit-animation: loading 1s linear 0s infinite; 
+        animation: loading 1s linear 0s infinite; 
+        border-width: 5px; 
+        border-color: $color000 $bgwhite;; 
+        border-style: solid; 
+        border-radius: 50%; 
+        bottom: 0; 
+        height: 20px; 
+        left: 0; 
+        margin: auto; 
+        position: absolute; 
+        right: 0; 
+        top: 0; 
+        width: 20px; 
+        z-index: 2; 
+    }
+    .error { 
+        bottom: 0; 
+        color: $bgwhite; 
+        display: none; 
+        height: 64px; 
+        left: 0; 
+        margin: auto; 
+        position: absolute; 
+        right: 0; 
+        top: 0; 
+        text-align: center; 
+        width: 64px; 
+    }
+    .mute{
+        cursor: pointer;
+        color: $bgwhite;
+        right: 10px;
+        height: 30px;
+        position: absolute;
+        line-height: 30px;
+        z-index: 100;
+    }
+    .channel{
+        cursor: pointer;
+        color: $bgwhite;
+        font-size: 23px;
+        right: 10px;
+        height: 30px;
+        position: absolute;
+        line-height: 30px;
+        right: 35px;
+        z-index: 100;
+    }
+ }
+#playerArea {
+    .control{
+        background: rgba(248,248,248,1);
+        bottom: 0px;
+        min-height: 40px;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+    #V_fullScreen{
+        float: right;
+        margin: 12px;
+    }
+    #V_volum{
+        float: right;
+        padding: 12px;
+    }
+    .scroll { 
+        background: $color777a7f; 
+        float: right; 
+        height: 100px; 
+        position: absolute;
+        padding: 10px 0;
+        right: -50000000px;
+        top: -120px;
+        width: 20px; 
+        z-index: 2;
+        .scrollson { 
+            background: $color3297fc; 
+            cursor: default; 
+            height: 0px; 
+            left: 8px;
+            position: absolute; 
+            width: 4px; 
+            z-index: 2; 
+        }
+        .scrollson:before { 
+            border-radius: 50%; 
+            background: $bgwhite; 
+            content: ''; 
+            height: 8px; 
+            left: -2px;
+            position: absolute; 
+            top: -2px;
+            width: 8px; 
+        }
+        .scrollsonbg { 
+            background: $color606060; 
+            height: 100px;
+            position: absolute; 
+            left: 8px; 
+            top: 10px;
+            width: 4px; 
+        }
+    }
+    .modelcontrol { 
+        color: $color606060; 
+        float: right;
+        font-size: 12px;
+        height: 12px; 
+        font-size: 12px; 
+        line-height: 12px; 
+        position: relative; 
+        margin-top: 12px; 
+        margin-right: 10px; 
+        text-align: center; 
+        width: 50px; 
+        .title { 
+            background: none;
+            border: none;
+            cursor: pointer;  
+            color: $color707070; 
+            height: 12px; 
+            font-size: 12px; 
+            line-height: 12px; 
+            position: relative; 
+            padding: 0;
+            text-align: center; 
+            width: 50px; 
+        }
+        .modelcontrollist { 
+            background: #242424; 
+            display: none; 
+            line-height: 20px; 
+            position: absolute;
+            top: -12px;
+            width: 50px; 
+            z-index: 2;
+            .modelspan { 
+                box-shadow: 0 1px 0 0 #606060;
+                cursor: pointer; 
+                color: $bgwhite; 
+                float: left; 
+                font-size: 12px;
+                height: 20px; 
+                line-height: 20px; 
+                overflow: hidden; 
+                text-align: center;  
+                text-overflow: ellipsis; 
+                white-space: nowrap; 
+                width: 100%; 
+            }
+            .modelspan:hover{
+                background: rgba(96,96,96,0.7);
+                font-size: 12px;
+            }
+            .modelspan:last-child{
+                box-shadow: none;
+            }
+        }
+    }
+}

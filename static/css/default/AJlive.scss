@@ -1,0 +1,400 @@
+$bgwhite:#fff;//内容及title标题背景色
+$color3197fc: #3197fc;//高亮
+$color98b4d9: #98b4d9;//input 边框
+$color606060: #606060;//字体颜色
+$colorred: #f00; // 红色
+$colord5dfec: #d5dfec;// 图片底色
+$color8a9cc2: #8a9cc2;
+$color727272: #727272;
+$colorf0f7ff: #f0f7ff;//背景色
+$colorcecece: #cecece;
+.AJlive_right{
+    float: left;
+    height: auto;
+    width: 880px;
+    .single{
+        float: left;
+        margin-top: 20px;
+        width: 100%;
+        .line{
+            float: left;
+            min-height: 22px;
+            margin: 0;
+            margin-bottom: 20px;
+            width: 100%;
+            .txt{
+                float: left;
+                line-height: 22px;
+                min-width: 95px;
+                width: auto;
+            }
+            .input{
+                border:1px solid $color98b4d9;
+                height: 22px;
+                outline: none;
+                padding: 0 5px;
+                width: 250px;
+            }
+        }
+    }
+    .multiple{
+        float: left;
+        margin-top: 20px;
+        width: 100%;
+        .linepart{
+            background: $colorf0f7ff;
+            float: left;
+            padding: 10px 1%;
+            margin-bottom: 20px;
+            min-height: 112px;
+            width: 98%;
+            .line{
+                float: left;
+                min-height: 22px;
+                margin: 0;
+                margin-bottom: 20px;
+                width: 100%;
+                .txt{
+                    float: left;
+                    line-height: 22px;
+                    min-width: 95px;
+                    width: auto;
+                }
+                .del{
+                    float: right;
+                    font-size: 17px;
+                    height: 17px;
+                    width: 17px;
+                }
+                .input{
+                    background: none;
+                    border:1px solid $color98b4d9;
+                    height: 22px;
+                    outline: none;
+                    padding: 0 5px;
+                    width: 250px;
+                }
+                .screen{
+                    margin-right: 20px;
+                    width: 120px;
+                }
+                .shorttxt{
+                    min-width: 50px;
+                }
+                .empty{
+                    float: left;
+                    min-height: 22px;
+                    width: 202px;
+                }
+            }
+        }
+    }
+    .borderbottom{
+        border-bottom: 1px solid $color98b4d9;
+    }
+    .formline{
+        float: left;
+        min-height: 22px;
+        line-height: 22px;
+        padding: 15px 0;
+        position: relative;
+        width: 100%;
+        #livestarthmicon,#liveendhmicon,#livestarticon,#liveendicon{
+            float: left;
+            margin-left: -30px;
+            margin-right: 20px;
+        }
+        #livestarthmicon:before{
+            color: $color606060;
+            content: '\e628';
+            float: left;
+            transform: rotate(90deg);
+        }
+        #liveendhmicon:before{
+            color: $color606060;
+            content: '\e628';
+            float: left;
+            transform: rotate(90deg);
+        }
+        #livestart,#liveend{
+            width: 150px;
+        }
+        #livestarthm,#liveendhm,{
+            text-indent: -68px;
+            width: 100px;
+        }
+        .commit{
+            color: $color606060;
+        }
+        .number{
+            color: $color606060;
+            position: absolute;
+            right: 220px;
+            text-align: right;
+            top: 38px;
+            width: 100px;
+        }
+        #imgPreview{
+            background: $colord5dfec;
+            height:124px;
+            margin-left: 100px;
+            width:220px; 
+        }
+        i{
+            color: $colorred;
+        }
+        .to{
+            float: left;
+            height: 22px;
+            line-height: 22px;
+            margin: 0 15px 0 0;
+            width: auto;
+        }
+        .radiofather {
+            .radio,.radioed{
+                margin-right: 45px;
+                margin-top: 6px;
+            }
+        }
+        .txt{
+            float: left;
+            font-size: 14px;
+            min-height: 22px;
+            min-width: 100px;
+            .red{
+                color: $colorred;
+            }
+        }
+        .selectbtn{
+            border:1px solid $color3197fc;
+            color: $color3197fc;
+            cursor: pointer;
+            border-radius: 0;
+            height: 28px;
+            line-height: 28px;
+            left: 100px;
+            padding: 0 5px;
+            position: absolute;
+            text-align: center;
+            z-index: 1;
+            width: 100px;
+        }
+        .input{
+            border:1px solid $color8a9cc2;
+            border-radius: 0;
+            height: 22px;
+            line-height: 22px;
+            padding: 0 5px;
+            position: relative;
+            width: 288px;
+            z-index: 2;
+        }
+        .textarea{
+            border:1px solid $color8a9cc2;
+            border-radius: 0;
+            height: 158px;
+            line-height: 22px;
+            padding: 0 5px;
+            width: 693px;
+            resize: none;
+        }
+        #imgPreview{
+            background: $colord5dfec;
+            height:124px;
+            margin-left: 100px;
+            width:220px; 
+        }
+        .save,.cancel{
+            background: $color3197fc;
+            color: $bgwhite;
+            cursor: pointer;
+            float: left;
+            height: 26px;
+            line-height: 26px;
+            margin: 15px 50px 30px 0;
+            text-align: center;
+            width: 60px;
+        }
+    }
+}
+// 图片上传
+.formwin {
+    .canvaspart {
+        float: left;
+        position: relative;
+    }
+    .fileup{
+        float: left;
+        opacity: 0;
+        position: relative;
+        width: 90px;
+        z-index: 1000003;
+    }
+    .warntxt{
+        width: 100%;
+        float: left;
+        text-indent: 100px;
+    }
+    .filechoose,.unresaddbtn,.resaddbtn{
+        background: $bgwhite;
+        border:1px solid $color3197fc;
+        color: $color3197fc;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        left: 90px;
+        line-height: 30px;
+        position: absolute;
+        margin-left: 10px;
+        text-align: center;
+        width: 90px;
+        z-index: 1000000;
+    }
+    .unresaddbtn{
+        border:1px solid $color727272;
+        color: $color727272;
+    }
+    .filelist{
+        float: left;
+        min-height: 30px;
+        margin-left: 100px;
+        margin-top: 12px;
+        position: relative;
+        width: 480px;
+        .list{
+            float: left;
+            position: relative;
+            margin-right: 20px;
+            width: 130px;
+            .fileclose{
+                font-size: 14px;
+                position: absolute;
+                right: 0;
+                top: -16px;
+                zoom: 0.5;
+                z-index: 1000005;
+            }
+            .filechoose {
+                left: 0;
+                margin-left:0;
+                width: 130px;
+            }
+        }
+    }
+    .sliderpart{
+        float: left;
+        margin-top: 20px;
+        width: 100%;
+        .progress{
+            float: left;
+            background: #d3d3d3;
+            border-radius: 3px;
+            height: 7px;
+            margin-left: 10px;
+            margin-top: 3px;
+            margin-right: 10px;
+            position: relative;
+            width: 100px;
+        }
+        .innergress {
+            background: #2c9cff;
+            border-radius: 3px;
+            height: 7px;
+            position: relative;
+            width: 0;
+        }
+        .innergress:before{
+            background: #2c9cff;
+            border-radius: 50%;
+            content: '';
+            height: 14px;
+            position: absolute;
+            right: -7px;
+            top: -3px;
+            width: 14px;
+        }
+        .slidericon{
+            color: $colorcecece;
+            font-size: 16px;
+            float: left;
+        }
+    }
+    .mrightcreate{
+        background: $bgwhite;
+        border:1px solid $color3197fc;
+        color: $color3197fc;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 10px;
+        text-align: center;
+        width: 90px;
+    }
+    #realcanvas{
+        position: relative;
+        left: -10000000px;
+    }
+    .canvaspart{
+        background: #f0f7ff;
+        float: left;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        width: 530px;
+    }
+    #canvas,.divcenter {
+        border: 1px solid #404853;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 130px;
+        width: 230px;
+        margin: auto;
+        z-index: 2;
+    }
+    #canvasimg{
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+}
+#livemasterlist{
+    float: left;
+    width: 100%;
+    .lists{
+        float: left;
+        box-shadow: 0 0 0 1px $color8a9cc2;
+        height: 30px;
+        margin-bottom: 1px;
+        width: 100%;
+        .radio, .radioed{
+            float: left;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 30px;
+            line-height: 30px;
+            width: 100%;
+            .icon{
+                margin: 10px 2%;
+            }
+            .number{
+                float: left;
+                box-shadow: 1px 0 0 0  $color8a9cc2, -1px 0 0 0  $color8a9cc2;
+                text-align: center;
+                width: 30%;
+            }
+            .name{
+                float: left;
+                text-align: center;
+                width: 60%;
+            }
+        }
+    }
+    .lists:first-child{
+        margin-top: 20px;
+    }
+}

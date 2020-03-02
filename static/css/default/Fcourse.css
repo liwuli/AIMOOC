@@ -1,0 +1,359 @@
+.searchcondition { float: left; margin: 30px 0 12px 0; width: 100%; }
+.searchcondition .list { float: left; line-height: 15px; margin-bottom: 18px; width: 100%; }
+.searchcondition .list .text { float: left; font-weight: 600; height: 15px; line-height: 15px; padding: 5px 0; width: 8%; }
+.searchcondition .list .lists { float: left; line-height: 15px; width: 92%; }
+.searchcondition .list .lists span { cursor: pointer; float: left; height: 15px; line-height: 15px; padding: 5px 10px; }
+.searchcondition .list .lists span.selected { color: #3197fc; font-weight: 600; }
+
+.searchline { float: left; width: 100%; }
+.searchline .hot { cursor: pointer; float: left; height: 15px; line-height: 15px; padding-left: 10px; margin-top: 7px; }
+.searchline .news { cursor: pointer; box-shadow: 1px 0 0 0 #707070; height: 15px; line-height: 15px; float: left; padding-right: 10px; margin-top: 7px; }
+.searchline .hot:hover { color: #3197fc; }
+.searchline .news:hover { color: #3197fc; }
+.searchline .searchinput { border: 1px solid #929ac2; float: right; height: 28px; line-height: 28px; padding: 0 5px; width: 200px; }
+.searchline .search { border: 1px solid #3197fc; color: #3197fc; cursor: pointer; float: right; height: 28px; line-height: 28px; margin-left: 10px; text-align: center; width: 58px; }
+
+.reslist { float: left; margin-top: 20px; width: 100%; }
+.reslist .coursenewlist { background: #f2f2f2; float: left; min-height: 202px; margin-right: 20px; margin-bottom: 20px; overflow: hidden; position: relative; width: 260px; }
+.reslist .coursenewlist .img { background: #f0f7ff; float: left; height: 147px; width: 100%; }
+.reslist .coursenewlist .img img { height: 147px; width: 260px; }
+.reslist .coursenewlist .name { float: left; font-size: 12px; height: 16px; line-height: 16px; margin: 6px 0 7px 0; padding: 0 3%; width: 94%; }
+.reslist .coursenewlist .name:hover { color: #3197fc; }
+.reslist .coursenewlist .half { float: left; font-size: 12px; height: 12px; line-height: 12px; padding-left: 3%; width: 47%; }
+.reslist .coursenewlist .half .halficon { color: #606060; float: left; font-size: 12px; height: 12px; width: 12px; }
+.reslist .coursenewlist .half .txt { color: #707070; float: left; height: 13px; line-height: 12px; margin-left: 3px;display: flex;align-items: center; }
+.reslist .coursenewlist .halfright { float: right; font-size: 12px; height: 12px; line-height: 12px; padding-right: 3%; max-width: 47%; }
+.reslist .coursenewlist .halfright .halficon { color: #606060; float: left; font-size: 12px; height: 12px; width: 12px; }
+.reslist .coursenewlist .halfright .txt { color: #707070; float: left; height: 12px; line-height: 12px; margin-left: 3px; display: flex;align-items: center; }
+.reslist .coursenewlist .bluepart, .reslist .coursenewlist .greenpart, .reslist .coursenewlist .yellowpart { color: #fff; font-size: 12px; height: 30px; line-height: 30px; left: -107px; position: absolute; transform: rotate(-45deg); transform-origin: center; text-align: center; top: 10px; width: 100%; }
+.reslist .coursenewlist .bluepart { background: rgba(61, 139, 224, 0.8); }
+.reslist .coursenewlist .greenpart { background: rgba(18, 157, 16, 0.8); }
+.reslist .coursenewlist .yellowpart { background: rgba(235, 188, 74, 0.8); }
+.reslist .courselist { float: left; height: 160px; position: relative; margin-right: 30px; margin-bottom: 30px; width: 195px; }
+.reslist .courselist .img { background: #f0f7ff; cursor: pointer; float: left; height: 110px; width: 195px; }
+.reslist .courselist .img img { float: left; height: 110px; width: 195px; }
+.reslist .courselist .textshow { background: #787b80; color: #fff; height: 20px; line-height: 20px; left: 0; position: absolute; top: 90px; width: 195px; }
+.reslist .courselist .textshow span { color: #fff; font-size: 12px; float: left; height: 20px; line-height: 20px; width: 46%; }
+.reslist .courselist .textshow span:last-child { color: #fff; font-size: 12px; float: right; height: 20px; line-height: 20px; }
+.reslist .courselist .title { float: left; height: 25px; line-height: 25px; width: 100%; }
+
+.searchlist { float: left; width: 100%; }
+.searchlist .list { float: left; height: 117px; margin: 15px 0; width: 100%; }
+.searchlist .list .img { background: #f0f7ff; float: left; height: 117px; width: 210px; }
+.searchlist .list .img img { float: left; height: 117px; width: 210px; }
+.searchlist .list .title { float: left; height: 14px; line-height: 14px; margin-bottom: 15px; margin-left: 20px; width: 870px; }
+.searchlist .list .textshow { float: left; height: 16px; line-height: 16px; margin-bottom: 13px; margin-left: 20px; width: 870px; }
+.searchlist .list .textshow span { float: left; max-width: 160px; margin-right: 15px; }
+.searchlist .list .info { float: left; line-height: 16px; margin-bottom: 13px; margin-left: 20px; width: 870px; }
+.searchlist .list .info .infos { line-height: 16px; float: left; min-width: 820px; max-width: 820px; }
+.searchlist .list .info .link { color: #3197fc; cursor: pointer; float: right; text-decoration: underline; width: 40px; }
+.searchlist .list .parts { float: left; height: 14px; line-height: 14px; margin-left: 20px; width: 870px; }
+.searchlist .list .parts .span { background: #d3e8fd; cursor: pointer; float: left; height: 30px; line-height: 30px; margin-right: 15px; padding: 0 5px; width: 192px; }
+.searchlist .list .parts .span:hover { background: #3197fc; color: #fff; }
+.searchlist .more { border: 1px solid #3197fc; color: #3197fc; cursor: pointer; float: left; height: 28px; line-height: 28px; margin-top: 45px; margin-left: 577px; text-align: center; width: 143px; }
+
+.coursehead { float: left; height: 143px; width: 100%; }
+.coursehead .img { background: #f0f7ff; float: left; height: 143px; width: 254px; }
+.coursehead .img img { float: left; height: 143px; width: 254px; }
+.coursehead .title { float: left; font-size: 15px; height: 15px; line-height: 15px; margin-left: 35px; width: 810px; }
+.coursehead .line { float: left; height: 18px; margin: 20px 0 0 35px; width: 810px; }
+.coursehead .line .person { color: #3197fc; font-size: 18px; float: left; height: 18px; width: 18px; }
+.coursehead .line .persontext { float: left; height: 18px; margin-right: 30px; width: auto; }
+.coursehead .line .star { float: left; height: 18px; }
+.coursehead .line input { height: 18px; line-height: 21px; }
+.coursehead .line .startlearn { border: 1px solid #3197fc; color: #3197fc; cursor: pointer; float: left; height: 28px; line-height: 28px; text-align: center; width: 84px; }
+.coursehead .line .focus { cursor: pointer; float: left; font-size: 18px; height: 18px; margin-left: 30px; margin-top: 5px; width: 18px; }
+.coursehead .line .focustxt { cursor: pointer; float: left; height: 18px; line-height: 18px; margin-top: 5px; margin-left: 5px; width: auto; }
+
+.coursetitle { float: left; font-size: 17px; height: 17px; line-height: 17px; margin: 30px 0 20px 0; width: 100%; }
+
+.cousrsebread { float: left; height: 30px; line-height: 30px; margin: 20px 0; width: 100%; }
+.cousrsebread span { cursor: pointer; float: left; height: 30px; line-height: 30px; margin-right: 10px; padding: 0 15px; width: auto; }
+.cousrsebread span.selected { background: #3197fc; border-radius: 18px; color: #fff; }
+
+.courseleft { box-shadow: 0 0 0 1px #b1d3ff; float: left; min-height: 432px; margin-bottom: 30px; width: 732px; }
+.courseleft .appraiseleft { float: left; height: 200px; margin: 18px; position: relative; width: 260px; }
+.courseleft .appraiseleft .scoleline { height: 18px; margin-left: 60px; position: relative; }
+.courseleft .appraiseleft .scoleline .star { height: 18px; }
+.courseleft .appraiseleft .scoleline input { font-size: 24px; height: 45px; line-height: 45px; left: -60px; position: absolute; }
+.courseleft .appraiseleft .person { height: 12px; line-height: 12px; left: 60px; position: absolute; top: 35px; width: 150px; }
+.courseleft .appraiseleft .stararr { float: left; margin: 40px 0 0 0; width: 100%; }
+.courseleft .appraiseleft .stararr .starline { float: left; height: 14px; margin-bottom: 15px; width: 100%; }
+.courseleft .appraiseleft .stararr .starline .txt { float: left; height: 14px; line-height: 14px; margin-right: 15px; width: 24px; }
+.courseleft .appraiseleft .stararr .starline .progressbg { float: left; background: #d3d3d3; height: 12px; position: relative; width: 100px; }
+.courseleft .appraiseleft .stararr .starline .progressbg .progress { background: #e7ad1d; float: left; height: 12px; left: 0; min-width: 0px; position: absolute; top: 0; }
+.courseleft .appraiseleft .stararr .starline .progresstxt { float: left; font-size: 12px; height: 12px; line-height: 12px; margin-left: 10px; }
+.courseleft .appraiseright { float: left; height: 200px; margin: 18px; position: relative; width: 400px; }
+.courseleft .appraiseright .scoleline { height: 18px; position: relative; }
+.courseleft .appraiseright .scoleline .star { height: 18px; }
+.courseleft .appraiseright .appraise { float: left; margin-right: 10px; width: auto; }
+.courseleft .appraiseright .textarea { box-shadow: 0 0 0 1px #929ac2; float: left; height: 98px; line-height: 21px; margin: 20px 0; padding: 10px; overflow: hidden; word-break: break-all; width: 380px; resize: none; }
+.courseleft .appraiseright .startlearn { border: 1px solid #3197fc; color: #3197fc; cursor: pointer; float: right; height: 28px; line-height: 28px; text-align: center; width: 84px; }
+.courseleft .appraiselist { float: left; margin: 0; padding: 2%; width: 96%; }
+.courseleft .appraiselist .img { background: #d3e8fd; border-radius: 50%; float: left; height: 48px; position: relative; width: 48px; }
+.courseleft .appraiselist .img img { border-radius: 50%; height: 48px; width: 48px; }
+.courseleft .appraiselist .appraiserightpart { float: right; margin-right: 15px; margin-bottom: 25px; width: 630px; }
+.courseleft .appraiselist .appraiserightpart .name { float: left; height: 12px; line-height: 12px; margin-right: 30px; width: auto; }
+.courseleft .appraiselist .appraiserightpart .star { background: url(../../images/star.png) 4px -63px no-repeat; float: left; height: 14px; width: 120px; }
+.courseleft .appraiselist .appraiserightpart .star .starbg { background: url(../../images/star.png) 4px -46px no-repeat; float: left; height: 14px; width: 0px; }
+.courseleft .appraiselist .appraiserightpart .dates { font-size: 12px; float: right; height: 12px; line-height: 12px; width: auto; }
+.courseleft .appraiselist .appraiserightpart .content { font-size: 12px; float: left; line-height: 20px; margin-top: 12px; word-break: break-all; width: 100%; }
+.courseleft .line { box-shadow: 0 1px 0 0 #e6f2fe; float: left; margin: 0; padding: 2%; width: 96%; }
+.courseleft .line .title { float: left; height: 14px; line-height: 14px; width: 100%; }
+.courseleft .line .content { float: left; font-size: 12px; line-height: 30px; margin: 11px 0 0 0; width: 100%; }
+.courseleft .line .contents { float: left; font-size: 12px; min-height: 30px; line-height: 30px; width: 100%; }
+.courseleft .line .book { float: left; height: 160px; margin-top: 20px; width: 100%; }
+.courseleft .line .book .img { background: #d3e8fd; float: left; height: 160px; position: relative; width: 124px; }
+.courseleft .line .book .img .txt { bottom: 0; height: 14px; line-height: 14px; left: 0; margin: auto; position: absolute; right: 0; top: 0; width: 75px; z-index: 1; }
+.courseleft .line .book .img img { height: 160px; position: relative; width: 124px; z-index: 2; }
+.courseleft .line .book .name, .courseleft .line .book .editor, .courseleft .line .book .publish { float: left; font-size: 12px; height: 12px; line-height: 12px; margin-bottom: 20px; margin-left: 20px; width: 540px; }
+.courseleft .directorylist { float: left; height: 35px; line-height: 35px; margin-top: 10px; padding: 0 2%; width: 96%; }
+.courseleft .directorylist .clas { float: left; line-height: 35px; width: 55px; }
+.courseleft .directorylist .name { float: left; line-height: 35px; width: 400px; }
+.courseleft .directorylist .type { float: right; line-height: 35px; width: 240px; }
+.courseleft .directorylist .type .types { float: right; font-size: 16px; width: auto; }
+.courseleft .directorylist .type .txt { float: right; margin-right: 15px; margin-left: 5px; width: auto; }
+.courseleft .directorylist:hover { background: #f0f8fe; }
+
+.courseright { float: right; margin-bottom: 30px; width: 344px; }
+.courseright .notice { box-shadow: 0 0 0 1px #b1d3ff; float: left; min-height: 303px; position: relative; width: 100%; }
+.courseright .notice .title { float: left; line-height: 14px; padding: 18px 18px 0 18px; width: 90%; }
+.courseright .notice .list { cursor: pointer; float: left; height: 111px; margin-top: 10px; padding: 0 5% 0 5%; width: 90%; }
+.courseright .notice .list .titles { float: left; height: 14px; line-height: 14px; margin-top: 10px; width: 100%; }
+.courseright .notice .list .titles .icons { color: #6c6c6c; font-size: 14px; float: left; height: 14px; width: 14px; }
+.courseright .notice .list .titles .txt { font-size: 12px; float: left; width: 290px; }
+.courseright .notice .list .content { font-size: 12px; float: left; line-height: 21px; max-height: 42px; margin: 12px 0 12px 0; overflow: hidden; word-break: break-all; width: 100%; }
+.courseright .notice .list .dates { float: left; font-size: 12px; height: 12px; line-height: 12px; text-align: right; width: 100%; }
+.courseright .notice .list:hover { background: #f0f7ff; }
+.courseright .notice .more { bottom: 10px; color: #3197fc; cursor: pointer; float: right; font-size: 12px; height: 12px; line-height: 12px; margin-top: 5px; position: absolute; right: 18px; text-decoration: underline; width: 50px; }
+.courseright .charge { box-shadow: 0 0 0 1px #b1d3ff; float: left; min-height: 232px; margin-top: 20px; width: 100%; }
+.courseright .charge .title { float: left; line-height: 14px; padding: 18px 18px 0 18px; width: 90%; }
+.courseright .charge .list { float: left; height: 48px; margin: 15px 0; padding: 0 5% 0 5%; width: 90%; }
+.courseright .charge .list .img, .courseright .charge .list img { background: #d3e8fd; border-radius: 50%; float: left; height: 48px; width: 48px; }
+.courseright .charge .list .name, .courseright .charge .list .college { float: left; height: 14px; line-height: 14px; margin-left: 15px; width: 245px; }
+.courseright .charge .list .college { margin-top: 20px; }
+.courseright .charge .lists { float: left; margin: 15px 0; padding: 0 5% 0 5%; width: 90%; }
+.courseright .charge .lists .list { float: left; height: 48px; margin: 15px 0; padding: 0; width: 50%; }
+.courseright .charge .lists .list .img, .courseright .charge .lists .list img { background: #d3e8fd; border-radius: 50%; float: left; height: 48px; width: 48px; }
+.courseright .charge .lists .list .name, .courseright .charge .lists .list .college { float: left; height: 14px; line-height: 14px; margin-left: 15px; width: 85px; }
+.courseright .charge .lists .list .college { margin-top: 20px; }
+
+#couseannouncement { box-shadow: 0 0 0 1px #b1d3ff; float: left; height: 555px; margin-bottom: 30px; width: 100%; }
+#couseannouncement .announcelist { float: left; padding: 2%; width: 96%; }
+#couseannouncement .announcelist .dates { float: left; height: 17px; line-height: 17px; }
+#couseannouncement .announcelist .dates .icondates { color: #3197fc; float: left; font-size: 17px; height: 17px; width: 17px; }
+#couseannouncement .announcelist .dates .txt { float: left; font-size: 12px; line-height: 17px; margin-left: 15px; }
+#couseannouncement .announcelist .title { float: left; height: 14px; line-height: 14px; margin: 20px 0; width: 100%; }
+#couseannouncement .announcelist .content { float: left; height: 63px; line-height: 21px; margin-bottom: 20px; overflow: hidden; position: relative; word-break: break-all; width: 96%; }
+#couseannouncement .announcelist .content .iconarr { font-size: 18px; bottom: 0; position: absolute; right: -40px; }
+
+.cdetail_title { float: left; height: 17px; margin: 30px 0 20px 0; width: 100%; }
+.cdetail_title .backarr { color: #707070; cursor: pointer; font-size: 17px; float: left; height: 17px; width: 17px; }
+.cdetail_title .title { cursor: pointer; font-size: 17px; float: left; height: 17px; line-height: 17px; max-width: 1180px; margin-left: 10px; width: auto; }
+
+.cdetail_left { float: left; width: 685px; }
+.cdetail_left .video { background: #f0f7ff; float: left; height: 386px; width: 100%; }
+.cdetail_left .videobottom { box-shadow: 0 0 0 1px #e6f2fe; float: left; height: 15px; margin-bottom: 20px; padding: 7px 0; width: 100%; }
+.cdetail_left .videobottom .collect { cursor: pointer; float: left; height: 15px; width: auto; }
+.cdetail_left .videobottom .collect .collecticon { color: #e8ad1d; font-size: 15px; float: left; height: 15px; margin-left: 10px; width: 15px; }
+.cdetail_left .videobottom .download { cursor: pointer; float: left; height: 15px; width: auto; }
+.cdetail_left .videobottom .download .downloadicon { font-size: 15px; float: left; height: 15px; width: 15px; }
+.cdetail_left .videobottom .learn, .cdetail_left .videobottom .learned { box-shadow: 0 0 0 1px #606060; border-radius: 20px; cursor: pointer; float: right; height: 20px; margin-right: 10px; margin-top: -3px; width: 65px; }
+.cdetail_left .videobottom .learn .learicon, .cdetail_left .videobottom .learned .learicon { color: inherit; float: left; font-size: 12px; height: 12px; margin: 3px 7px; width: 12px; }
+.cdetail_left .videobottom .learn .txt, .cdetail_left .videobottom .learned .txt { color: inherit; font-size: 12px; float: left; line-height: 20px; margin: 0; }
+.cdetail_left .videobottom .learned { box-shadow: 0 0 0 1px #3197fc; background: #3197fc; color: #fff; }
+.cdetail_left .videobottom .txt { float: left; height: 15px; line-height: 15px; margin: 0 20px 0 10px; width: auto; }
+.cdetail_left .files { box-shadow: 0 0 0 1px #b1d3ff; float: left; min-height: 200px; margin-bottom: 20px; width: 100%; }
+.cdetail_left .files .resdownload { border: 1px solid #141414; float: right; font-size: 12px; height: 20px; line-height: 20px; margin: 15px 20px 0 0; text-align: center; width: 80px; }
+.cdetail_left .files .title { background: #e8f2fe; float: left; height: 32px; line-height: 32px; padding: 0 2%; width: 96%; }
+.cdetail_left .files .reslist { float: left; height: 20px; margin: 0 0 20px 0; width: 100%; }
+.cdetail_left .files .reslist .iconres { cursor: pointer; font-size: 20px; float: left; height: 20px; width: 20px; }
+.cdetail_left .files .reslist .ppt { color: #df5b2a; }
+.cdetail_left .files .reslist .word { color: #1198dc; }
+.cdetail_left .files .reslist .excel { color: #1c7441; }
+.cdetail_left .files .reslist .name { cursor: pointer; float: left; height: 20px; line-height: 20px; margin-left: 10px; max-width: 590px; }
+.cdetail_left .files #resdownload { float: left; height: 100px; margin: 20px 20px 0 20px; width: 644px; }
+.cdetail_left .mixpart { box-shadow: 0 0 0 1px #b1d3ff; float: left; min-height: 280px; margin-bottom: 20px; width: 100%; }
+.cdetail_left .mixpart .tab { border-top: 1px solid #e6f2fe; border-bottom: 1px solid #e6f2fe; float: left; height: 30px; width: 100%; }
+.cdetail_left .mixpart .tab span { cursor: pointer; float: left; height: 30px; line-height: 30px; text-align: center; width: 15%; }
+.cdetail_left .mixpart .tab span a { float: left; height: 30px; display: block; width: 100%; }
+.cdetail_left .mixpart .tab span.selected { box-shadow: 0 1px 0 0 #3197fc; color: #3197fc; }
+.cdetail_left .mixpart .microvideoappraisepart { box-shadow: 0 1px 0 0 #e6f2fe; float: left; height: 185px; padding: 20px 0 40px 0; width: 100%; }
+.cdetail_left .mixpart .microvideoappraisepart .textarea { border: 1px solid #e6f2fe; float: left; height: 140px; line-height: 20px; margin: 0 2%; padding: 1%; resize: none; width: 94%; }
+.cdetail_left .mixpart .microvideoappraisepart .createbtn { border: 1px solid #606060; cursor: pointer; float: right; font-size: 12px; height: 18px; line-height: 18px; margin-top: 20px; margin-right: 2%; min-width: 50px; padding: 0 5px; }
+.cdetail_left .mixpart .setscole { float: left; margin: 2%; overflow: hidden; width: 96%; }
+.cdetail_left .mixpart .setscole .setcoleshow, .cdetail_left .mixpart .setscole .setcoleshowchat { float: left; width: 100%; }
+.cdetail_left .mixpart .setscole .setcoleshowchat .title { float: left; margin-top: 20px; width: 100%; }
+.cdetail_left .mixpart .setscole .setcoleshowchat .title .txt { float: left; height: 17px; line-height: 17px; width: auto; }
+.cdetail_left .mixpart .setscole .setcoleshowchat .title .fontsize12 { font-size: 12px; }
+.cdetail_left .mixpart .setscole .setcoleshowchat .title .fontsize17 { font-size: 17px; }
+.cdetail_left .mixpart .setscole .setcoleshowchat .half { float: left; width: 50%; }
+.cdetail_left .mixpart .setscole .head { border-bottom: 1px solid #e8f2fe; float: left; padding: 20px 0; width: 100%; }
+.cdetail_left .mixpart .setscole .head span { border-radius: 15px; box-shadow: 0 0 0 1px #606060; cursor: pointer; float: left; font-size: 12px; height: 24px; line-height: 24px; margin-left: 20px; margin-bottom: 10px; padding: 0 15px; text-align: center; }
+.cdetail_left .mixpart .setscole .head span.selected { box-shadow: 0 0 0 1px #3197fc; background: #3197fc; color: #fff; }
+.cdetail_left .mixpart .setscole .list { border-bottom: 1px solid #e8f2fe; float: left; padding: 20px 0; width: 100%; }
+.cdetail_left .mixpart .setscole .list .submit { box-shadow: 0 0 0 1px #707070; cursor: pointer; font-size: 12px; float: left; height: 22px; line-height: 22px; margin-left: 310px; text-align: center; width: 58px; }
+.cdetail_left .mixpart .setscole .list .lists { float: left; font-size: 12px; min-height: 20px; line-height: 20px; margin: 8px 0; word-break: break-all; width: 100%; }
+.cdetail_left .mixpart .setscole .list .lists .content { float: left; line-height: 20px; word-break: break-all; width: 400px; }
+.cdetail_left .mixpart .setscole .list .lists .scole { float: right; height: 20px; line-height: 20px; position: relative; width: 200px; }
+.cdetail_left .mixpart .setscole .list .lists .scole .star { background: #fff; border: 1px solid #3197fc; border-radius: 4px; overflow: hidden; position: relative; height: 8px; }
+.cdetail_left .mixpart .setscole .list .lists .scole .star .starbg { background: linear-gradient(90deg, #92c9ff 30%, #3197fc); border-radius: 4px; height: 8px; position: relative; }
+.cdetail_left .mixpart .setscole .list .lists .scole .star .starbg:before { background: #2375c9; border-radius: 4px; content: ''; height: 8px; position: absolute; right: 0; top: 0; width: 18px; }
+.cdetail_left .mixpart .setscole .list .lists .scole .scoletxt { float: left; line-height: inherit; }
+.cdetail_left .mixpart .discusspart, .cdetail_left .mixpart .discusspart1 { float: left; margin: 2%; overflow: hidden; width: 96%; }
+.cdetail_left .mixpart .discusspart .publishbtn, .cdetail_left .mixpart .discusspart .iappraise, .cdetail_left .mixpart .discusspart1 .publishbtn, .cdetail_left .mixpart .discusspart1 .iappraise { border: 1px solid #606060; cursor: pointer; float: left; font-size: 12px; height: 18px; line-height: 18px; min-width: 50px; padding: 0 5px; }
+.cdetail_left .mixpart .discusspart .blue, .cdetail_left .mixpart .discusspart1 .blue { color: #3197fc; }
+.cdetail_left .mixpart .discusspart .iappraise, .cdetail_left .mixpart .discusspart1 .iappraise { margin-top: 15px; margin-bottom: 20px; text-align: center; width: 70px; }
+.cdetail_left .mixpart .discusspart .back, .cdetail_left .mixpart .discusspart1 .back { float: left; height: 15px; margin: 20px 0; width: 100%; }
+.cdetail_left .mixpart .discusspart .back .backicon, .cdetail_left .mixpart .discusspart1 .back .backicon { cursor: pointer; color: #141414; font-size: 15px; float: left; height: 15px; line-height: 15px; width: 15px; }
+.cdetail_left .mixpart .discusspart .back .backtxt, .cdetail_left .mixpart .discusspart1 .back .backtxt { float: left; font-size: 15px; height: 15px; line-height: 15px; width: auto; }
+.cdetail_left .mixpart .discusspart .list, .cdetail_left .mixpart .discusspart1 .list { border-bottom: 1px solid #e6f2fe; float: left; min-height: 90px; margin-top: 20px; width: 100%; }
+.cdetail_left .mixpart .discusspart .list .img, .cdetail_left .mixpart .discusspart1 .list .img { background: #f0f7ff; border-radius: 50%; float: left; height: 48px; width: 48px; }
+.cdetail_left .mixpart .discusspart .list .img img, .cdetail_left .mixpart .discusspart1 .list .img img { border-radius: 50%; height: 48px; width: 48px; }
+.cdetail_left .mixpart .discusspart .list .right, .cdetail_left .mixpart .discusspart1 .list .right { float: left; margin-left: 10px; width: 580px; }
+.cdetail_left .mixpart .discusspart .list .right .title, .cdetail_left .mixpart .discusspart1 .list .right .title { font-size: 12px; float: left; height: 12px; line-height: 12px; max-width: 200px; }
+.cdetail_left .mixpart .discusspart .list .right .dates, .cdetail_left .mixpart .discusspart1 .list .right .dates { color: #606060; font-size: 12px; float: right; height: 12px; line-height: 12px; width: auto; }
+.cdetail_left .mixpart .discusspart .list .right .content, .cdetail_left .mixpart .discusspart1 .list .right .content { font-size: 12px; float: left; max-height: 60px; line-height: 20px; margin-top: 20px; overflow: hidden; word-break: break-all; width: 100%; }
+.cdetail_left .mixpart .discusspart .list .right .appraiseicon, .cdetail_left .mixpart .discusspart .list .right .discussicon, .cdetail_left .mixpart .discusspart .list .right .discussiconed, .cdetail_left .mixpart .discusspart1 .list .right .appraiseicon, .cdetail_left .mixpart .discusspart1 .list .right .discussicon, .cdetail_left .mixpart .discusspart1 .list .right .discussiconed { float: right; font-size: 18px; height: 18px; margin-right: 5px; width: 18px; }
+.cdetail_left .mixpart .discusspart .list .right .discussiconed, .cdetail_left .mixpart .discusspart1 .list .right .discussiconed { color: #3197fc; }
+.cdetail_left .mixpart .discusspart .list .right .blue, .cdetail_left .mixpart .discusspart1 .list .right .blue { color: #3197fc; }
+.cdetail_left .mixpart .discusspart .list .right .appraiseicontxt, .cdetail_left .mixpart .discusspart .list .right .discussicontxt, .cdetail_left .mixpart .discusspart1 .list .right .appraiseicontxt, .cdetail_left .mixpart .discusspart1 .list .right .discussicontxt { float: right; font-size: 12px; height: 18px; line-height: 18px; margin-right: 5px; }
+.cdetail_left .mixpart .discusspart .list .right .responseback, .cdetail_left .mixpart .discusspart1 .list .right .responseback { float: left; width: 100%; }
+.cdetail_left .mixpart .discusspart .list .right .response, .cdetail_left .mixpart .discusspart1 .list .right .response { float: left; height: 0; margin: 20px 0; overflow: hidden; width: 100%; }
+.cdetail_left .mixpart .discusspart .list .right .response .head, .cdetail_left .mixpart .discusspart1 .list .right .response .head { background: #d3e8fd; font-size: 12px; float: left; height: 26px; line-height: 26px; text-indent: 5px; width: 100%; }
+.cdetail_left .mixpart .discusspart .list .right .response .listpart, .cdetail_left .mixpart .discusspart1 .list .right .response .listpart { float: left; padding: 3%; width: 94%; }
+.cdetail_left .mixpart .discusspart .list .right .response .listpart .lists, .cdetail_left .mixpart .discusspart1 .list .right .response .listpart .lists { float: left; font-size: 12px; min-height: 12px; line-height: 18px; margin-bottom: 20px; width: 100%; }
+.cdetail_left .mixpart .discusspart .list .right .response .listpart .lists .name, .cdetail_left .mixpart .discusspart1 .list .right .response .listpart .lists .name { color: #3197fc; font-size: inherit; float: left; line-height: inherit; width: auto; }
+.cdetail_left .mixpart .discusspart .list .right .response .listpart .lists .textcontent, .cdetail_left .mixpart .discusspart1 .list .right .response .listpart .lists .textcontent { float: left; font-size: inherit; line-height: inherit; max-width: 490px; word-break: break-all; }
+.cdetail_left .mixpart .discusspart .list .right .response .input, .cdetail_left .mixpart .discusspart1 .list .right .response .input { border: 1px solid #e6f2fe; font-size: 12px; float: left; height: 27px; line-height: 27px; margin: 0 0 20px 20px; padding: 0 5px; width: 430px; }
+.cdetail_left .mixpart .discusspart .list .right .response .publishbtn, .cdetail_left .mixpart .discusspart1 .list .right .response .publishbtn { border: 1px solid #e6f2fe; font-size: 12px; float: left; height: 27px; line-height: 27px; margin-left: 20px; margin-bottom: 20px; text-align: center; width: 60px; }
+.cdetail_left .mixpart .stpart { float: left; margin: 2%; width: 96%; }
+.cdetail_left .mixpart .stpart #stChart { float: left; margin: 30px 0 30px 20px; position: relative; }
+.cdetail_left .mixpart .stpart #stChart .netZel { background: #e9e9e9; height: 100%; position: absolute; width: 1px; }
+.cdetail_left .mixpart .stpart #stChart .netTel { background: #e9e9e9; height: 1px; left: 0; position: absolute; bottom: 0; width: 100%; }
+.cdetail_left .mixpart .stpart #stChart .netTel:before { left: -24px; content: attr(data-num); bottom: -15px; position: absolute; width: auto; }
+.cdetail_left .mixpart .stpart #stChart .netZel:before { bottom: -24px; content: attr(data-num); left: -10px; position: absolute; width: auto; }
+.cdetail_left .mixpart .stpart #stChart .Zel { background: #606060; height: 100%; position: absolute; top: 0; width: 1px; z-index: 1; }
+.cdetail_left .mixpart .stpart #stChart .Tel { background: #606060; height: 1px; left: 0; position: absolute; width: 100%; z-index: 1; }
+.cdetail_left .mixpart .stpart #stChart .Zel::before { border: 1px solid #606060; border-right: none; border-bottom: none; border-left: none; content: ""; height: 10px; left: -5px; position: absolute; top: 3px; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); width: 10px; }
+.cdetail_left .mixpart .stpart #stChart .Zel::after { color: #3197fc; content: "S"; height: 10px; left: -15px; position: absolute; top: -3px; width: 25px; }
+.cdetail_left .mixpart .stpart #stChart .Tel::before { border: 1px solid #606060; border-right: none; border-bottom: none; border-top: none; content: ""; height: 10px; right: 3px; position: absolute; top: -5px; -webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); width: 10px; }
+.cdetail_left .mixpart .stpart #stChart .Tel::after { color: #3197fc; content: "T"; height: 10px; right: 3px; position: absolute; top: 5px; width: 25px; }
+.cdetail_left .mixpart .stpart #stChart .horizenLine { background: #3197fc; height: 1px; position: absolute; z-index: 1; }
+.cdetail_left .mixpart .stpart #stChart .horizenLine span { border-radius: 50%; background: #3197fc; height: 4px; left: -1px; position: absolute; top: -1px; width: 4px; z-index: 1; }
+.cdetail_left .mixpart .stpart #stChart .verticalLine { background: #3197fc; position: absolute; width: 1px; z-index: 1; }
+.cdetail_left .mixpart .stpart #stChart .verticalLine span { border-radius: 50%; background: #3197fc; bottom: -1px; height: 4px; left: -1px; position: absolute; width: 4px; z-index: 1; }
+.cdetail_left .mixpart .stpart .head { box-shadow: 1px 0 0 0 #e6f2fe inset, -1px 0 0 0 #e6f2fe inset, 0 1px 0 0 #e6f2fe inset; float: left; height: 60px; width: 100%; }
+.cdetail_left .mixpart .stpart .head span { box-shadow: 1px 0 0 0 #e6f2fe, 0 1px 0 0 #e6f2fe; float: left; height: 30px; line-height: 30px; text-align: center; width: 20%; }
+.cdetail_left .mixpart .stpart .half { float: left; margin-top: 20px; width: 50%; }
+.cdetail_left .mixpart .stpart .half .leftspan { float: left; height: 14px; line-height: 14px; margin-bottom: 30px; width: 100%; }
+.cdetail_left .mixpart .stpart .half .blue { color: #3197fc; }
+.cdetail_left .mixpart .stpart .half .halfhead { box-shadow: 0 0 0 1px #e6f2fe; float: right; margin-right: 20px; width: 270px; }
+.cdetail_left .mixpart .stpart .half .halfhead span { box-shadow: 1px 0 0 0 #e6f2fe, 0 1px 0 0 #e6f2fe; float: left; height: 30px; line-height: 30px; text-align: center; width: 50%; }
+.cdetail_left .mixpart .stpart .half .halfhead span:last-child { font-size: 12px; }
+.cdetail_left .mixpart .stpart .half #rtChart { float: left; margin-bottom: 50px; margin-left: 30px; position: relative; }
+.cdetail_left .mixpart .stpart .half #rtChart .netZel { background: #e9e9e9; height: 100%; position: absolute; width: 1px; }
+.cdetail_left .mixpart .stpart .half #rtChart .netTel { background: #e9e9e9; height: 1px; left: 0; position: absolute; bottom: 0; width: 100%; }
+.cdetail_left .mixpart .stpart .half #rtChart .netTel:before { left: -24px; content: attr(data-num); bottom: -25px; position: absolute; width: 25px; }
+.cdetail_left .mixpart .stpart .half #rtChart .netZel:before { bottom: -25px; content: attr(data-num); left: -10px; position: absolute; width: 25px; }
+.cdetail_left .mixpart .stpart .half #rtChart .Zel { background: #606060; height: 100%; position: absolute; top: 0; width: 1px; z-index: 1; }
+.cdetail_left .mixpart .stpart .half #rtChart .Tel { background: #606060; height: 1px; left: 0; position: absolute; width: 100%; z-index: 1; }
+.cdetail_left .mixpart .stpart .half #rtChart .Zel::before { border: 1px solid #606060; border-right: none; border-bottom: none; content: ""; height: 10px; left: -5px; position: absolute; top: 3px; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); width: 10px; }
+.cdetail_left .mixpart .stpart .half #rtChart .Zel::after { color: #3197fc; content: "Ch"; height: 10px; left: -26px; position: absolute; top: -3px; width: 25px; }
+.cdetail_left .mixpart .stpart .half #rtChart .Tel::before { border: 1px solid #606060; border-right: none; border-bottom: none; content: ""; height: 10px; right: 3px; position: absolute; top: -5px; -webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); width: 10px; }
+.cdetail_left .mixpart .stpart .half #rtChart .Tel::after { color: #3197fc; content: "Rt"; height: 10px; right: 3px; position: absolute; top: 7px; width: 25px; }
+.cdetail_left .mixpart .stpart .half #rtChart .upline, .cdetail_left .mixpart .stpart .half #rtChart .downline, .cdetail_left .mixpart .stpart .half #rtChart .horizenLine, .cdetail_left .mixpart .stpart .half #rtChart .twoVertivalLine { background: #606060; bottom: 0; height: 1px; position: absolute; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -ms-transform-origin: 0 0; transform-origin: 0 0; z-index: 1; }
+.cdetail_left .mixpart .stpart .half #rtChart .twoVertivalLine { height: 150px; width: 1px; }
+.cdetail_left .mixpart .stpart .half #rtChart .horizenLine { bottom: 100px; width: 150px; }
+.cdetail_left .mixpart .stpart .half #rtChart .resType { height: 30px; position: absolute; width: 50px; }
+.cdetail_left .mixpart .stpart .half #rtChart .resCircle { background: #3197fc; border-radius: 50%; height: 10px; position: absolute; width: 10px; }
+
+.cdetail_right { float: right; width: 390px; }
+.cdetail_right .courseinfo { box-shadow: 0 0 0 1px #b1d3ff; float: left; height: 435px; margin-bottom: 20px; width: 100%; }
+.cdetail_right .courseinfo .courseinfos { float: left; height: 72px; padding: 4%; width: 92%; }
+.cdetail_right .courseinfo .courseinfos .left { float: left; height: 72px; width: 200px; }
+.cdetail_right .courseinfo .courseinfos .left .title { font-size: 16px; float: left; height: 18px; line-height: 18px; margin-bottom: 36px; width: 200px; }
+.cdetail_right .courseinfo .courseinfos .left .teachercharge { float: left; height: 14px; line-height: 14px; width: 100%; }
+.cdetail_right .courseinfo .courseinfos .right { background: #f0f7ff; float: right; height: 72px; width: 125px; }
+.cdetail_right .courseinfo .courseinfos .right img { height: 72px; width: 125px; }
+.cdetail_right .courseinfo .tab { border-top: 1px solid #e6f2fe; border-bottom: 1px solid #e6f2fe; float: left; height: 30px; width: 100%; }
+.cdetail_right .courseinfo .tab span { cursor: pointer; float: left; height: 30px; line-height: 30px; text-align: center; width: 20%; }
+.cdetail_right .courseinfo .tab span a { float: left; height: 30px; display: block; width: 100%; }
+.cdetail_right .courseinfo .tab span.selected { box-shadow: 0 1px 0 0 #3197fc; color: #3197fc; }
+.cdetail_right .courseinfo .tabtwo { float: left; height: 32px; line-height: 32px; margin-top: 1px; width: 100%; }
+.cdetail_right .courseinfo .tabtwo .tabhalf { background: #e6f2fe; cursor: pointer; float: left; height: inherit; line-height: inherit; text-align: center; width: 50%; }
+.cdetail_right .courseinfo .tabtwo .tabhalf.selected { box-shadow: none; color: #3197fc; background: #fff; }
+.cdetail_right .courseinfo .tabcreatebtn, .cdetail_right .courseinfo .tabcreatebtnselected { border: 1px solid #606060; cursor: pointer; float: left; font-size: 12px; height: 18px; line-height: 18px; margin-bottom: 10px; min-width: 48px; padding: 0 5px; text-align: center; }
+.cdetail_right .courseinfo .tabcreatebtnselected { background: #3197fc; border: #3197fc; color: #fff; }
+.cdetail_right .courseinfo .tabcreatecontent { float: left; width: 100%; }
+.cdetail_right .courseinfo .tabcreatecontent .knowledgeline { float: left; margin-bottom: 20px; width: 100%; }
+.cdetail_right .courseinfo .tabcreatecontent .knowledgeline .txt { float: left; font-size: 12px; height: 18px; line-height: 18px; width: auto; }
+.cdetail_right .courseinfo .tabcreatecontent .knowledgeline .input, .cdetail_right .courseinfo .tabcreatecontent .knowledgeline .inputb { border: 1px solid #606060; float: left; font-size: 12px; height: 12px; line-height: 12px; margin-left: 4px; margin-right: 4px; outline: none; text-indent: 0; text-align: center; width: 30px; }
+.cdetail_right .courseinfo .tabcreatecontent .knowledgeline .inputb { height: 18px; line-height: 18px; outline: none; width: 275px; }
+.cdetail_right .courseinfo .tabcreatecontent .knowledgeline .getnowtime { border: 1px solid #606060; float: right; font-size: 12px; height: 17px; line-height: 17px; margin-right: 10px; outline: none; padding: 0 5px; text-indent: 0; text-align: center; width: 78px; }
+.cdetail_right .courseinfo .tabcreatecontent .tabtextarea { box-shadow: 0 0 0 1px #e6f2fe inset; float: left; height: 50px; line-height: 25px; padding: 0 2%; resize: none; width: 96%; }
+.cdetail_right .courseinfo .tabcreatecontent .time { border: 1px solid #606060; float: left; height: 17px; line-height: 17px; margin-top: 10px; min-width: 60px; }
+.cdetail_right .courseinfo .tabcreatecontent .time .timeicon { float: left; font-size: 12px; height: 12px; line-height: 17px; margin-left: 4px; width: 12px; }
+.cdetail_right .courseinfo .tabcreatecontent .time .timeval { float: left; font-size: 12px; height: 12px; line-height: 17px; padding-right: 5px; width: auto; }
+.cdetail_right .courseinfo .tabcreatecontent .save, .cdetail_right .courseinfo .tabcreatecontent .cancel { background: #3197fc; color: #fff; cursor: pointer; float: right; font-size: 12px; height: 18px; line-height: 18px; margin-top: 10px; margin-right: 5px; text-align: center; width: 30px; }
+.cdetail_right .courseinfo .tabcreatecontent .cancel { background: #fff; color: #141414; margin-right: 10px; }
+.cdetail_right .courseinfo .tabcreatecontent .save1, .cdetail_right .courseinfo .tabcreatecontent .cancel1 { background: #fff; border: 1px solid #606060; color: #141414; cursor: pointer; float: left; font-size: 12px; height: 18px; line-height: 18px; margin-right: 5px; text-align: center; width: 30px; }
+.cdetail_right .courseinfo .mynotelist, .cdetail_right .courseinfo .othernotelist { border-bottom: 1px solid #e6f2fe; float: left; height: 95px; margin: 10px 0; position: relative; width: 100%; }
+.cdetail_right .courseinfo .mynotelist .img, .cdetail_right .courseinfo .othernotelist .img { background: #f0f7ff; border-radius: 50%; float: left; height: 48px; position: relative; width: 48px; }
+.cdetail_right .courseinfo .mynotelist .img img, .cdetail_right .courseinfo .othernotelist .img img { border-radius: 50%; height: 48px; position: relative; width: 48px; }
+.cdetail_right .courseinfo .mynotelist .dates, .cdetail_right .courseinfo .othernotelist .dates { float: left; font-size: 12px; height: 12px; line-height: 12px; margin-top: 20px; width: 100%; }
+.cdetail_right .courseinfo .mynotelist .optline, .cdetail_right .courseinfo .othernotelist .optline { background: #fff; bottom: 13px; display: none; float: left; font-size: 12px; height: 12px; line-height: 12px; position: absolute; width: 100%; z-index: 2; }
+.cdetail_right .courseinfo .mynotelist .optline .edit, .cdetail_right .courseinfo .othernotelist .optline .edit { font-size: 12px; float: left; margin-left: 61px; }
+.cdetail_right .courseinfo .mynotelist .optline .del, .cdetail_right .courseinfo .othernotelist .optline .del { font-size: 12px; float: left; margin-left: 20px; }
+.cdetail_right .courseinfo .mynotelist .line, .cdetail_right .courseinfo .othernotelist .line { float: left; font-size: 12px; height: 12px; margin: 0; position: relative; width: 300px; }
+.cdetail_right .courseinfo .mynotelist .line .input, .cdetail_right .courseinfo .othernotelist .line .input { border: 1px solid #606060; display: none; float: left; height: 18px; line-height: 18px; left: 0; position: absolute; width: 200px; z-index: 5; }
+.cdetail_right .courseinfo .mynotelist .line .save1, .cdetail_right .courseinfo .mynotelist .line .cancel1, .cdetail_right .courseinfo .othernotelist .line .save1, .cdetail_right .courseinfo .othernotelist .line .cancel1 { background: #fff; border: 1px solid #606060; color: #141414; cursor: pointer; display: none; float: left; font-size: 12px; height: 18px; line-height: 18px; margin-right: 5px; position: absolute; left: 0; top: 30px; text-align: center; width: 30px; z-index: 5; }
+.cdetail_right .courseinfo .mynotelist .line .cancel1, .cdetail_right .courseinfo .othernotelist .line .cancel1 { left: 40px; }
+.cdetail_right .courseinfo .mynotelist .line .title, .cdetail_right .courseinfo .othernotelist .line .title { float: left; height: 12px; line-height: 12px; text-indent: 15px; width: 200px; }
+.cdetail_right .courseinfo .mynotelist .line .time, .cdetail_right .courseinfo .othernotelist .line .time { border: 1px solid #606060; display: block; float: right; height: 17px; line-height: 17px; min-width: 60px; }
+.cdetail_right .courseinfo .mynotelist .line .time .timeicon, .cdetail_right .courseinfo .othernotelist .line .time .timeicon { float: left; font-size: 12px; height: 12px; line-height: 17px; margin-left: 4px; width: 12px; }
+.cdetail_right .courseinfo .mynotelist .line .time .appraiseicon, .cdetail_right .courseinfo .othernotelist .line .time .appraiseicon { float: left; font-size: 17px; height: 17px; line-height: 17px; margin-right: 7px; width: 17px; }
+.cdetail_right .courseinfo .mynotelist .line .time .blue, .cdetail_right .courseinfo .othernotelist .line .time .blue { color: #3197fc; }
+.cdetail_right .courseinfo .mynotelist .line .time .timeval, .cdetail_right .courseinfo .othernotelist .line .time .timeval { cursor: pointer; float: left; font-size: 12px; height: 12px; line-height: 17px; padding-right: 5px; width: auto; }
+.cdetail_right .courseinfo .mynotelist:hover .dates { display: none; }
+.cdetail_right .courseinfo .mynotelist:hover .optline { display: block; }
+.cdetail_right .courseinfo .knowledgelist { border-bottom: 1px solid #e6f2fe; float: left; min-height: 14px; padding: 10px 0; position: relative; width: 100%; }
+.cdetail_right .courseinfo .knowledgelist .time { cursor: pointer; }
+.cdetail_right .courseinfo .knowledgelist .time, .cdetail_right .courseinfo .knowledgelist .title { float: left; font-size: 12px; height: 12px; line-height: 12px; width: 60px; }
+.cdetail_right .courseinfo .knowledgelist .title { margin-left: 20px; width: 205px; }
+.cdetail_right .courseinfo .knowledgelist .delicon, .cdetail_right .courseinfo .knowledgelist .editicon { font-size: 14px; height: 14px; line-height: 14px; margin: 0 8px; width: 14px; }
+.cdetail_right .courseinfo .knowledgelist .editcontent { border: 1px solid #606060; font-size: 12px; height: 16px; line-height: 16px; left: 47px; padding: 0 5px; position: absolute; top: 5px; width: 190px; }
+.cdetail_right .courseinfo .knowledgelist .save1, .cdetail_right .courseinfo .knowledgelist .cancel1 { background: #fff; border: 1px solid #606060; color: #141414; cursor: pointer; float: left; font-size: 12px; height: 18px; line-height: 18px; margin-right: 5px; margin-top: 15px; text-align: center; width: 30px; }
+.cdetail_right .courseinfo #xj, .cdetail_right .courseinfo #ml, .cdetail_right .courseinfo #note, .cdetail_right .courseinfo #othernote, .cdetail_right .courseinfo #knowledge, .cdetail_right .courseinfo #microvideo { float: left; height: 250px; margin: 20px 20px 0 20px; width: 353px; }
+.cdetail_right .courseinfo .notelist { float: left; height: 290px; overflow: hidden; width: 100%; }
+.cdetail_right .courseinfo .microvideolist { float: left; height: 70px; margin-bottom: 20px; width: 100%; }
+.cdetail_right .courseinfo .microvideolist .img { background: #f0f7ff; float: left; height: 70px; position: relative; width: 125px; }
+.cdetail_right .courseinfo .microvideolist .img .txt { bottom: 0; height: 18px; line-height: 18px; left: 0; margin: auto; position: absolute; right: 0; top: 0; text-align: center; width: 100px; z-index: 1; }
+.cdetail_right .courseinfo .microvideolist .img img { height: 70px; position: relative; width: 125px; z-index: 2; }
+.cdetail_right .courseinfo .microvideolist .title { float: left; font-size: 12px; height: 12px; line-height: 12px; margin-left: 10px; margin-bottom: 45px; width: 180px; }
+.cdetail_right .courseinfo .microvideolist .editicon, .cdetail_right .courseinfo .microvideolist .delicon { float: right; margin-right: 10px; }
+.cdetail_right .courseinfo .xjlist { float: left; height: 72px; margin-bottom: 20px; width: 100%; }
+.cdetail_right .courseinfo .xjlist .img { background: #f0f7ff; float: left; height: 52px; position: relative; width: 125px; }
+.cdetail_right .courseinfo .xjlist .img .txt { background: #787b80; color: #fff; height: 18px; line-height: 18px; left: 0; position: absolute; text-align: left; text-indent: 5px; top: 52px; width: 100%; z-index: 3; }
+.cdetail_right .courseinfo .xjlist .img img { height: 52px; position: relative; width: 125px; z-index: 2; }
+.cdetail_right .courseinfo .xjlist .title, .cdetail_right .courseinfo .xjlist .see { background: #fff; float: left; height: 14px; line-height: 14px; margin-bottom: 36px; padding: 0; text-indent: 20px; width: 170px; }
+.cdetail_right .courseinfo .xjlist .see { margin-bottom: 0; }
+.cdetail_right .courseinfo .mllist { cursor: pointer; float: left; font-size: 12px; height: 23px; margin-bottom: 7px; width: 100%; }
+.cdetail_right .courseinfo .mllist .jieci, .cdetail_right .courseinfo .mllist .title, .cdetail_right .courseinfo .mllist .dates { color: inherit; float: left; height: 23px; line-height: 23px; margin-left: 10px; width: 60px; }
+.cdetail_right .courseinfo .mllist .title { width: 190px; }
+.cdetail_right .courseinfo .mllist .dates { float: right; margin: 0; width: 75px; }
+.cdetail_right .courseinfo .mllist .dates .txt { float: left; height: 23px; line-height: 23px; width: 50px; }
+.cdetail_right .courseinfo .mllist .dates .playicon { color: inherit; float: right; font-size: 12px; height: 12px; line-height: 23px; margin-right: 7px; width: 12px; }
+.cdetail_right .courseinfo .mllisthover { background: #44526f; color: #fff; }
+.cdetail_right .courseinfo .mllist:hover { background: #44526f; color: #fff; }
+.cdetail_right .relativecourse { box-shadow: 0 0 0 1px #b1d3ff; float: left; height: 512px; margin-bottom: 20px; width: 100%; }
+.cdetail_right .relativecourse .title { background: #e8f2fe; float: left; height: 32px; line-height: 32px; padding: 0 2%; width: 96%; }
+.cdetail_right .relativecourse #reshot { float: left; height: 440px; margin: 20px 20px 0 20px; width: 353px; }
+.cdetail_right .relativecourse .reshotlist { float: left; height: 92px; margin-bottom: 20px; width: 100%; }
+.cdetail_right .relativecourse .reshotlist .img { background: #f0f7ff; float: left; height: 92px; position: relative; width: 160px; }
+.cdetail_right .relativecourse .reshotlist .img .txt { bottom: 0; height: 14px; line-height: 14px; left: 0; margin: auto; position: absolute; right: 0; top: 0; width: 50px; z-index: 1; }
+.cdetail_right .relativecourse .reshotlist .img img { height: 92px; position: relative; width: 160px; z-index: 2; }
+.cdetail_right .relativecourse .reshotlist .title, .cdetail_right .relativecourse .reshotlist .teacher, .cdetail_right .relativecourse .reshotlist .see { background: #fff; float: left; height: 14px; line-height: 14px; margin-bottom: 25px; padding: 0; text-indent: 20px; width: 170px; }
+.cdetail_right .relativecourse .reshotlist .see { margin-bottom: 0; }
+
+/*# sourceMappingURL=Fcourse.css.map */

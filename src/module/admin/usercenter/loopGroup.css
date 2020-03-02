@@ -1,0 +1,72 @@
+.main{
+  position: relative;
+  padding: 0 5px;
+  overflow: hidden;
+}
+.main table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.main table td{
+  border: 1px solid #98b4d9;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+.main a{
+  color: #3197fc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tab-group{
+  height: 46px;
+  padding-top: 20px;
+}
+.tab-group button{
+  height: 36px;
+  line-height: 36px;
+  float: left;
+  font-size: 13px;
+  border: 1px solid #98b4d9;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  padding: 0 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.active{
+  background: #fff;
+}
+.tab-info{
+  height: 90px;
+  border: 1px solid #98b4d9;
+}
+.tab-info p span{
+  display: inline-block;
+  line-height: 36px;
+  width: 45%;
+  padding-left: 4%;
+  font-size: 16px;
+}
+.search{
+  height: 50px;
+  padding-top: 15px;
+}
+.searchbtn{
+  margin-top: 3px;
+  background: #dddddd;
+  color: #000;
+}
+.space{
+  height: 100%;
+  width: 400px;
+  float: left;
+}
+.list,.taskList{
+  float: left;
+  width: 98.5%;
+  padding: 0 1% 10px 0.5%;
+  margin-bottom: 8px;
+  border: 1px solid #98b4d9;
+}

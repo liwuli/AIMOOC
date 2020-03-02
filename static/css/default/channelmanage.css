@@ -1,0 +1,18 @@
+.listrank { box-shadow: 0 0 0 1px #98b4d9; float: left; margin-bottom: 50px; width: 100%; }
+.listrank .head { border-bottom: 1px solid #98b4d9; float: left; height: 35px; width: 100%;background: #d5dfeb; }
+.listrank .head .name, .listrank .head .status, .listrank .head .opt, .listrank .head .pink { box-shadow: 1px 0px 0 0 #98b4d9; font-weight: 600; float: left; height: 35px; line-height: 35px; text-align: center; width: 40%; }
+.listrank .head .status { width: 10%; }
+.listrank .head .pink { margin-left: -1px; width: 15%; }
+.listrank .head .opt { box-shadow: none; width: 50%; }
+.listrank .list { box-shadow: 0 0 0 1px #98b4d9; background: #fff; float: left; height: 35px; width: 100%; }
+.listrank .list .name, .listrank .list .status, .listrank .list .pink { box-shadow: 1px 0px 0 0 #98b4d9; float: left; height: 35px; line-height: 35px; text-align: center; width: 40%; }
+.listrank .list .status { width: 10%; }
+.listrank .list .pink { width: 15%; }
+.listrank .list .pink input { box-shadow: 1px 0px 0 0px #98b4d9 inset; border: none; float: left; height: 35px; line-height: 35px; margin: 0; outline: none; padding: 0; text-align: center; width: 100%; }
+.listrank .list .opt { float: left; height: 35px; }
+.listrank .list .opt .edit, .listrank .list .opt .up, .listrank .list .opt .down, .listrank .list .opt .btnset, .listrank .list .opt .del { cursor: pointer; font-size: 14px; float: left; height: 14px; margin-left: 10px; line-height: 14px; text-align: center; width: auto; }
+.listrank .list .opt span { float: left; margin-top: 10px; }
+.listrank .list .opt .setticon, .listrank .list .opt .editicon, .listrank .list .opt .delicon, .listrank .list .opt .upicon, .listrank .list .opt .downicon { cursor: pointer; font-size: 14px; float: left; height: 14px; margin: 10px 5px 0 18px; width: 14px; }
+.listrank .list .opt .upicon { transform: rotate(180deg); }
+
+/*# sourceMappingURL=channelmanage.css.map */

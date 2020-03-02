@@ -1,0 +1,35 @@
+$color8a9cc2: #8a9cc2;
+#administrtivelist{
+    float: left;
+    width: 100%;
+    .lists{
+        float: left;
+        box-shadow: 0 0 0 1px $color8a9cc2;
+        height: 30px;
+        margin-bottom: 1px;
+        width: 100%;
+        .radio, .radioed{
+            float: left;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 30px;
+            line-height: 30px;
+            width: 100%;
+            .icon{
+                margin: 8px 2%;
+            }
+            .number{
+                float: left;
+                box-shadow: 1px 0 0 0  $color8a9cc2;
+                text-align: center;
+                width: 31%;
+            }
+            .number:last-child{
+                box-shadow: none;
+            }
+        }
+    }
+    .lists:first-child{
+        margin-top: 20px;
+    }
+}

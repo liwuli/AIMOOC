@@ -1,0 +1,64 @@
+.AJlive_right { float: left; height: auto; width: 880px; }
+.AJlive_right .single { float: left; margin-top: 20px; width: 100%; }
+.AJlive_right .single .line { float: left; min-height: 22px; margin: 0; margin-bottom: 20px; width: 100%; }
+.AJlive_right .single .line .txt { float: left; line-height: 22px; min-width: 95px; width: auto; }
+.AJlive_right .single .line .input { border: 1px solid #98b4d9; height: 22px; outline: none; padding: 0 5px; width: 250px; }
+.AJlive_right .multiple { float: left; margin-top: 20px; width: 100%; }
+.AJlive_right .multiple .linepart { background: #f0f7ff; float: left; padding: 10px 1%; margin-bottom: 20px; min-height: 112px; width: 98%; }
+.AJlive_right .multiple .linepart .line { float: left; min-height: 22px; margin: 0; margin-bottom: 20px; width: 100%; }
+.AJlive_right .multiple .linepart .line .txt { float: left; line-height: 22px; min-width: 95px; width: auto; }
+.AJlive_right .multiple .linepart .line .del { float: right; font-size: 17px; height: 17px; width: 17px; }
+.AJlive_right .multiple .linepart .line .input { background: none; border: 1px solid #98b4d9; height: 22px; outline: none; padding: 0 5px; width: 250px; }
+.AJlive_right .multiple .linepart .line .screen { margin-right: 20px; width: 120px; }
+.AJlive_right .multiple .linepart .line .shorttxt { min-width: 50px; }
+.AJlive_right .multiple .linepart .line .empty { float: left; min-height: 22px; width: 202px; }
+.AJlive_right .borderbottom { border-bottom: 1px solid #98b4d9; }
+.AJlive_right .formline { float: left; min-height: 22px; line-height: 22px; padding: 15px 0; position: relative; width: 100%; }
+.AJlive_right .formline #livestarthmicon, .AJlive_right .formline #liveendhmicon, .AJlive_right .formline #livestarticon, .AJlive_right .formline #liveendicon { float: left; margin-left: -30px; margin-right: 20px; }
+.AJlive_right .formline #livestarthmicon:before { color: #606060; content: '\e628'; float: left; transform: rotate(90deg); }
+.AJlive_right .formline #liveendhmicon:before { color: #606060; content: '\e628'; float: left; transform: rotate(90deg); }
+.AJlive_right .formline #livestart, .AJlive_right .formline #liveend { width: 150px; }
+.AJlive_right .formline #livestarthm, .AJlive_right .formline #liveendhm { text-indent: -68px; width: 100px; }
+.AJlive_right .formline .commit { color: #606060; }
+.AJlive_right .formline .number { color: #606060; position: absolute; right: 220px; text-align: right; top: 38px; width: 100px; }
+.AJlive_right .formline #imgPreview { background: #d5dfec; height: 124px; margin-left: 100px; width: 220px; }
+.AJlive_right .formline i { color: #f00; }
+.AJlive_right .formline .to { float: left; height: 22px; line-height: 22px; margin: 0 15px 0 0; width: auto; }
+.AJlive_right .formline .radiofather .radio, .AJlive_right .formline .radiofather .radioed { margin-right: 45px; margin-top: 6px; }
+.AJlive_right .formline .txt { float: left; font-size: 14px; min-height: 22px; min-width: 100px; }
+.AJlive_right .formline .txt .red { color: #f00; }
+.AJlive_right .formline .selectbtn { border: 1px solid #3197fc; color: #3197fc; cursor: pointer; border-radius: 0; height: 28px; line-height: 28px; left: 100px; padding: 0 5px; position: absolute; text-align: center; z-index: 1; width: 100px; }
+.AJlive_right .formline .input { border: 1px solid #8a9cc2; border-radius: 0; height: 22px; line-height: 22px; padding: 0 5px; position: relative; width: 288px; z-index: 2; }
+.AJlive_right .formline .textarea { border: 1px solid #8a9cc2; border-radius: 0; height: 158px; line-height: 22px; padding: 0 5px; width: 693px; resize: none; }
+.AJlive_right .formline #imgPreview { background: #d5dfec; height: 124px; margin-left: 100px; width: 220px; }
+.AJlive_right .formline .save, .AJlive_right .formline .cancel { background: #3197fc; color: #fff; cursor: pointer; float: left; height: 26px; line-height: 26px; margin: 15px 50px 30px 0; text-align: center; width: 60px; }
+
+.formwin .canvaspart { float: left; position: relative; }
+.formwin .fileup { float: left; opacity: 0; position: relative; width: 90px; z-index: 1000003; }
+.formwin .warntxt { width: 100%; float: left; text-indent: 100px; }
+.formwin .filechoose, .formwin .unresaddbtn, .formwin .resaddbtn { background: #fff; border: 1px solid #3197fc; color: #3197fc; cursor: pointer; float: left; height: 30px; left: 90px; line-height: 30px; position: absolute; margin-left: 10px; text-align: center; width: 90px; z-index: 1000000; }
+.formwin .unresaddbtn { border: 1px solid #727272; color: #727272; }
+.formwin .filelist { float: left; min-height: 30px; margin-left: 100px; margin-top: 12px; position: relative; width: 480px; }
+.formwin .filelist .list { float: left; position: relative; margin-right: 20px; width: 130px; }
+.formwin .filelist .list .fileclose { font-size: 14px; position: absolute; right: 0; top: -16px; zoom: 0.5; z-index: 1000005; }
+.formwin .filelist .list .filechoose { left: 0; margin-left: 0; width: 130px; }
+.formwin .sliderpart { float: left; margin-top: 20px; width: 100%; }
+.formwin .sliderpart .progress { float: left; background: #d3d3d3; border-radius: 3px; height: 7px; margin-left: 10px; margin-top: 3px; margin-right: 10px; position: relative; width: 100px; }
+.formwin .sliderpart .innergress { background: #2c9cff; border-radius: 3px; height: 7px; position: relative; width: 0; }
+.formwin .sliderpart .innergress:before { background: #2c9cff; border-radius: 50%; content: ''; height: 14px; position: absolute; right: -7px; top: -3px; width: 14px; }
+.formwin .sliderpart .slidericon { color: #cecece; font-size: 16px; float: left; }
+.formwin .mrightcreate { background: #fff; border: 1px solid #3197fc; color: #3197fc; cursor: pointer; float: left; height: 30px; line-height: 30px; margin-left: 10px; text-align: center; width: 90px; }
+.formwin #realcanvas { position: relative; left: -10000000px; }
+.formwin .canvaspart { background: #f0f7ff; float: left; height: 300px; overflow: hidden; position: relative; width: 530px; }
+.formwin #canvas, .formwin .divcenter { border: 1px solid #404853; position: absolute; left: 0; right: 0; bottom: 0; top: 0; height: 130px; width: 230px; margin: auto; z-index: 2; }
+.formwin #canvasimg { left: 0; position: absolute; top: 0; z-index: 1; }
+
+#livemasterlist { float: left; width: 100%; }
+#livemasterlist .lists { float: left; box-shadow: 0 0 0 1px #8a9cc2; height: 30px; margin-bottom: 1px; width: 100%; }
+#livemasterlist .lists .radio, #livemasterlist .lists .radioed { float: left; margin-top: 0; margin-bottom: 0; height: 30px; line-height: 30px; width: 100%; }
+#livemasterlist .lists .radio .icon, #livemasterlist .lists .radioed .icon { margin: 10px 2%; }
+#livemasterlist .lists .radio .number, #livemasterlist .lists .radioed .number { float: left; box-shadow: 1px 0 0 0 #8a9cc2, -1px 0 0 0 #8a9cc2; text-align: center; width: 30%; }
+#livemasterlist .lists .radio .name, #livemasterlist .lists .radioed .name { float: left; text-align: center; width: 60%; }
+#livemasterlist .lists:first-child { margin-top: 20px; }
+
+/*# sourceMappingURL=AJlive.css.map */

@@ -1,0 +1,74 @@
+.tab { float: left; height: 40px; margin: 29px 0; width: 100%; }
+.tab .span { background: #e9e9e9; border-radius: 5px; cursor: pointer; float: left; font-size: 15px; height: 40px; line-height: 40px; margin: 0 30px 0 0; min-width: 110px; padding: 0 10px; text-align: center; width: auto; }
+.tab .selected { background: #3197fc; color: #fff; }
+
+.searchrespart { float: left; width: 100%; }
+.searchrespart .searchlist { background: #f2f2f2; float: left; height: 215px; margin: 0 20px 30px 0; width: 285px; }
+.searchrespart .searchlist .img { background: #f0f7ff; float: left; height: 160px; width: 285px; }
+.searchrespart .searchlist .img img { float: left; height: 160px; width: 285px; }
+.searchrespart .searchlist .title { float: left; height: 12px; line-height: 12px; margin: 10px 0; padding: 0 5%; width: 90%; }
+.searchrespart .searchlist .see { float: left; height: 12px; line-height: 12px; padding: 0 5%; width: 90%; }
+.searchrespart .searchlist .see .person { font-size: 15px; float: left; width: 12px; }
+.searchrespart .searchlist .see .personnum { float: left; height: 12px; line-height: 12px; margin-left: 5px; width: auto; }
+.searchrespart .searchlist .see .time { color: #606060; float: right; height: 12px; line-height: 12px; width: auto; }
+
+.tabchannel { float: left; height: 35px; margin: 0 0 20px 0; width: 100%; }
+.tabchannel .left, .tabchannel .right { cursor: default; color: #3197fc; font-size: 18px; float: left; height: 35px; line-height: 35px; text-align: left; width: 60px; }
+.tabchannel .centerpart { float: left; height: 30px; overflow: hidden; width: 1080px; }
+.tabchannel .centerpart .inner { float: left; height: 30px; transition: all 0.2s ease-in-out; width: auto; }
+.tabchannel .centerpart .inner .span { box-shadow: 1px 0 0 0 #e9e9e9; cursor: pointer; float: left; height: 30px; line-height: 30px; margin-right: 10px; text-align: center; width: 170px; }
+.tabchannel .centerpart .inner .span:last-child { box-shadow: none; }
+.tabchannel .centerpart .inner .span:hover { color: #3197fc; }
+.tabchannel .centerpart .inner .selected { color: #3197fc; }
+
+.searchpart { float: left; margin: 30px 0; width: 100%; }
+.searchpart .txt { float: left; height: 25px; line-height: 25px; min-width: 65px; }
+.searchpart .to { float: left; line-height: 27px; margin: 0 10px; width: auto; }
+.searchpart .searchinput { background: #f2f2f2; border: none; float: left; height: 38px; line-height: 38px; margin-top: -6px; margin-left: 150px; padding: 0 10px; width: 477px; }
+.searchpart .searchinput:placeholder { color: #c3c3c3; font-size: 18px; }
+.searchpart .btn { background: #3197fc; cursor: pointer; color: #fff; font-size: 18px; float: left; height: 38px; line-height: 38px; margin-top: -6px; text-align: center; width: 82px; }
+
+.playpart { float: left; height: 525px; width: 100%; }
+.playpart .playareas { background: #f0f7ff; float: left; height: inherit; width: 933px; }
+.playpart .listpart { box-shadow: 0 0 0 1px #333; background: #333; float: left; height: inherit; margin-left: 5px; width: 260px; }
+
+#campustv .list { float: left; min-height: 30px; margin: 15px 10px; width: 240px; }
+#campustv .list .btn { cursor: pointer; float: left; height: 28px; line-height: 28px; text-align: center; width: 78px; }
+#campustv .list .btngray { box-shadow: 0 0 0 1px #a4a4a4; color: #a4a4a4; }
+#campustv .list .btnred { background: #fc3131; color: #fff; }
+#campustv .list .btngreen { background: #68d868; color: #fff; }
+#campustv .list .btnblue { background: #3197fc; color: #fff; }
+#campustv .list .colorgray { color: #a4a4a4 !important; }
+#campustv .list .colorblue { color: #3197fc; }
+#campustv .list .colorred { color: #fc3131; }
+#campustv .list .colorgreen { color: #68d868; }
+#campustv .list .time { color: #a4a4a4; float: left; height: 28px; line-height: 28px; text-align: center; width: 50px; }
+#campustv .list .content { color: #fff; float: left; line-height: 28px; min-height: 28px; word-break: break-all; width: 110px; }
+#campustv .fixed { background: rgba(0, 0, 0, 0.5); bottom: 0; color: #fff; cursor: pointer; font-size: 12px; height: 37px; line-height: 37px; position: absolute; text-align: center; width: 260px; z-index: 1; }
+
+.programlist { float: left; margin-left: 65px; margin-top: 50px; width: 1070px; }
+.programlist .list { float: left; height: 60px; position: relative; width: 100%; }
+.programlist .list .colorgray { color: #a4a4a4 !important; }
+.programlist .list .colorblue { color: #3197fc; }
+.programlist .list .colorred { color: #fc3131; }
+.programlist .list .colorgreen { color: #68d868; }
+.programlist .list .btngray { box-shadow: 0 0 0 1px #a4a4a4; color: #a4a4a4; }
+.programlist .list .btngray:before { background: #a4a4a4; border-radius: 50%; content: ''; height: 10px; position: absolute; right: -40px; top: 8px; width: 10px; z-index: 2; }
+.programlist .list .btngray:after { background: #606060; content: ''; height: 60px; position: absolute; right: -36px; top: 0px; width: 2px; }
+.programlist .list .btnred { background: #fc3131; color: #fff; cursor: pointer; }
+.programlist .list .btnred:before { background: #fc3131; border-radius: 50%; content: ''; height: 10px; position: absolute; right: -40px; top: 8px; width: 10px; z-index: 2; }
+.programlist .list .btnred:after { background: #606060; content: ''; height: 60px; position: absolute; right: -36px; top: 0px; width: 2px; }
+.programlist .list .btngreen { background: #68d868; color: #fff; }
+.programlist .list .btngreen:before { background: #68d868; border-radius: 50%; content: ''; height: 10px; position: absolute; right: -40px; top: 8px; width: 10px; z-index: 2; }
+.programlist .list .btngreen:after { background: #606060; content: ''; height: 60px; position: absolute; right: -36px; top: 0px; width: 2px; }
+.programlist .list .btnblue { background: #3197fc; color: #fff; cursor: pointer; }
+.programlist .list .btnblue:before { background: #3197fc; content: ''; height: 10px; position: absolute; right: -40px; top: 8px; transform: rotate(45deg); width: 10px; z-index: 2; }
+.programlist .list .btnblue:after { background: #606060; content: ''; height: 60px; position: absolute; right: -36px; top: 0px; width: 2px; }
+.programlist .list .btn { float: left; height: 30px; line-height: 30px; text-align: center; position: relative; width: 80px; }
+.programlist .list .time { color: #606060; font-size: 18px; float: left; height: 30px; line-height: 30px; margin-left: 45px; text-align: center; width: 105px; }
+.programlist .list .content { color: #141414; font-size: 16px; float: left; height: 30px; line-height: 30px; width: 750px; }
+.programlist .list .duration { color: #606060; font-size: 16px; float: left; height: 30px; line-height: 30px; text-align: right; width: 70px; }
+
+.backto { cursor: default; font-size: 16px; float: left; height: 16px; line-height: 16px; margin: 30px 0; width: auto; }
+
+/*# sourceMappingURL=Fcampustv.css.map */

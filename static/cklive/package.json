@@ -1,0 +1,22 @@
+{
+  "name": "cfcmxk",
+  "version": "1.0.1",
+  "description": "xk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ylws/xk.git"
+  },
+  "keywords": [
+    "xk"
+  ],
+  "author": "djl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ylws/xk/issues"
+  },
+  "homepage": "https://github.com/ylws/xk#readme"
+}

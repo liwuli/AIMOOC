@@ -1,0 +1,621 @@
+$bgwhite:#fff;//内容及title标题背景色
+$color45516a: #45516a;//manage left bg
+$color3197fc: #3197fc;//高亮
+$colorred: #f00; // 红色
+$color727272: #727272; // 按钮不可用
+$colorf0f7ff: #f0f7ff;//公告底色
+$colorcecece: #cecece; // 资源管理暂无数据
+$colorbcd4f0: #bcd4f0; //头像bg
+$color84c0ff: #84c0ff;//userinfo border
+$colorececec: #ececec;//userinfo border
+$colore4f0fe: #e4f0fe; // msg list bg
+$colorf2f2f2: #f2f2f2; // 我的收藏 直播
+$color575759: #575759; // 失效
+body{
+    background: $colorececec;
+}
+.U_left{
+    background: $bgwhite;
+    float: left;
+    width: 256px;
+    .userinfo{
+        border-bottom: 1px solid $color84c0ff;
+        float: left;
+        height: 163px;
+        margin: 30px 0 0 28px;
+        position: relative;
+        width: 200px;
+        .img{
+            background: $colorbcd4f0;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 95px;
+            margin: 0 0 0 50px;
+            position: relative;
+            width: 95px;
+            img{
+                border-radius: 50%;
+                height: 95px;
+                width: 95px;
+            }
+            .hover{
+                background: rgba(0,0,0,0.3);
+                border-radius: 50%;
+                display: none;
+                height: 95px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 95px;
+                z-index: 2;
+                .showicon{
+                    bottom: 0;
+                    color: $bgwhite;
+                    font-size: 24px;
+                    height: 24px;
+                    left: 0;
+                    margin: auto;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 24px;
+                }
+            }
+        }
+        .img:hover .hover{
+            display: block;
+        }
+        .name{
+            font-size: 17px;
+            float: left;
+            height: 17px;
+            line-height: 17px;
+            margin-top: 20px;
+            margin-left: 50px;
+            text-align: center;
+            width: 95px;
+        }
+        .edit{
+            font-size: 17px;
+            float: left;
+            height: 17px;
+            line-height: 17px;
+            margin-top: 20px;
+            text-align: center;
+            width: 17px;
+        }
+    }
+    .Manage{
+        float: left;
+        height: 46px;
+        line-height: 46px;
+        margin-top: 20px;
+        position: relative;
+        width: 100%;
+        .iconcssed{
+            color: $bgwhite!important;
+            font-size: 21px!important;
+            position: absolute;
+            left:30px;
+            top: 0px;
+            height: 21px;
+            width: 21px;
+            z-index: 2;
+        }
+        .iconcss{
+            color: inherit;
+            font-size: 21px!important;
+            position: absolute;
+            left:30px;
+            top: 0px;
+            height: 21px;
+            width: 21px;
+            z-index: 2;
+        }
+        a{
+            color: inherit;
+            float: left;
+            font-size: 16px;
+            height: 46px;
+            line-height: 46px;
+            position: relative;
+            text-indent: 68px;
+            width: 100%;
+        }
+        a.active{
+            color: $bgwhite;
+            background: $color3197fc;
+        }
+    }
+    .Manage:hover{
+        color: $bgwhite;
+        background: $color3197fc;
+    }
+}
+.U_right{
+    background: $bgwhite;
+    float: left;
+    height: auto;
+    margin-left: 10px;
+    width: 930px;
+    .allmessage{
+        border-bottom: 1px solid $color3197fc;
+        float: right;
+        height: 39px;
+        line-height: 39px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        width: 870px;
+    }
+    .tab{
+        border-bottom: 1px solid $color3197fc;
+        float: right;
+        font-size: 17px;
+        height: 39px;
+        line-height: 39px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        width: 870px;
+        span{
+            cursor: pointer;
+            float: left;
+            margin-right: 40px;
+            height: 39px;
+            line-height: 39px;
+            width: auto;
+        }
+        .span{
+            box-shadow: 0 -2px 0 0 $color3197fc inset;
+        }
+    }
+    .msglist{
+        background: $colore4f0fe;
+        float: right;
+        min-height: 56px;
+        margin-bottom: 20px;
+        margin-right: 30px;
+        padding: 0 10px;
+        width: 850px;
+        .lines{
+            float: left;
+            line-height: 28px;
+            word-break: break-all;
+            width: 100%;
+        }
+    }
+    .msgmore{
+        box-shadow: 0 0 0 1px $color3197fc;
+        color: $color3197fc;
+        cursor: pointer;
+        float: left;
+        height: 28px;
+        line-height: 28px;
+        margin-left: 420px;
+        text-align: center;
+        width: 88px;
+    }
+    .left30{
+        float: left;
+        margin-left: 30px;
+        width: 870px;
+        .edit{
+            color: $color3197fc;
+            cursor: pointer;
+            float: right;
+            height: 18px;
+            line-height: 18px;
+            margin-top: -10px;
+            width: auto;
+        }
+        .save,.saveno{
+            background: $color3197fc;
+            color: $bgwhite;
+            cursor: pointer;
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            margin: 110px 0 0 390px;
+            text-align: center;
+            width: 90px;
+        }
+        .saveno{
+            background: $color727272;
+        }
+        .basicline{
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            margin: 15px 0;
+            position: relative;
+            width: 100%;
+            .warn{
+                color: $colorred;
+                left: 82px;
+                position: absolute;
+                top: 30px;
+            }
+            .icons{
+                font-size: 14px;
+                float: left;
+                height: 30px;
+                margin: 0 10px;
+            }
+            .blue{
+                color: $color3197fc;
+            }
+            .red{
+                color: $colorred;
+            }
+            .txt{
+                float: left;
+                line-height: inherit;
+                min-width: 82px;
+            }
+            .input{
+                float: left;
+                height: 28px;
+                line-height: 28px;
+                padding: 0 5px;
+                width: 420px;
+            }
+        }
+        .search{
+            float: left;
+            line-height: 28px;
+            min-height: 28px;
+            width: 100%;
+            .txt{
+                float: left;
+                line-height: 32px;
+                margin-right: 15px;
+                width: auto;
+            }
+            .to{
+                float: left;
+                line-height: 32px;
+                margin: 0 10px;
+                width: auto;
+            }
+            .input{
+                float: left;
+                height: 28px;
+                line-height: 28px;
+                margin-left: 220px;
+                padding: 0 5px;
+                width: 200px;
+            }
+            .searchbtn{
+                box-shadow: 0 0 0 1px $color3197fc;
+                color: $color3197fc;
+                cursor: pointer;
+                float: left;
+                height: 28px;
+                line-height: 28px;
+                margin-left: 10px;
+                text-align: center;
+                width: 58px;
+            }
+            .secondline{
+                float: left;
+                height: 28px;
+                line-height: 28px;
+                margin: 30px 0;
+                width: 100%;
+                .blue{
+                    color: $color3197fc;
+                }
+            }
+            
+        }
+        .collectlivelist{
+            background: $colorf2f2f2;
+            float: left;
+            height: 200px;
+            margin: 0 30px 30px 0;
+            overflow: hidden;
+            position: relative;
+            width: 260px;
+            .del{
+//              color: $color575759;
+//              font-size: 12px;
+                position: absolute;
+                right: 3px;
+                bottom: 8px;
+            }
+            .img{
+                background: $colorf0f7ff;
+                float: left;
+                height: 143px;
+                width: 260px;
+                img{
+                    height: 143px;
+                    width: 260px;
+                }
+            }
+            .bluepart,.greenpart,.yellowpart,.failedpart{
+                color: $bgwhite;
+                font-size: 12px;
+                height: 30px;
+                line-height: 30px;
+                left:-107px;
+                position: absolute;
+                transform: rotate(-45deg);
+                transform-origin: center;
+                text-align: center;
+                top: 10px;
+                width: 100%;
+                
+            }
+            .bluepart{
+                background: rgba(61, 139, 224, 0.8);
+            }
+            .greenpart{
+                background: rgba(18, 157, 16, 0.8);
+            }
+            .yellowpart{
+                background: rgba(235, 188, 74, 0.8);
+            }
+            .failedpart{
+                background: rgba(87, 87, 89, 0.8);
+            }
+            .name{
+                float: left;
+                height: 12px;
+                line-height: 12px;
+                margin:10px 4%;
+                width: 92%;
+            }
+            .person{
+                float: left;
+                font-size: 12px;
+                margin:0px 4%;
+                width: 88%;
+                .admin, .adminname{
+                    float: left;
+                }
+                .adminname{
+                    margin-left: 5px;
+                }
+            }
+        }
+        .collectlist{
+            float: left;
+            height: 117px;
+            margin: 0 0px 30px 0;
+            width: 870px;
+            .img{
+                background: $colorf0f7ff;
+                float: left;
+                height: 117px;
+                width: 206px;
+                img{
+                    height: 117px;
+                    width: 206px;
+                }
+            }
+            .coursename{
+                float: left;
+                height: 14px;
+                line-height: 14px;
+                margin-left: 20px;
+                margin-bottom: 38px;
+                width: 640px;
+            }
+        }
+        .focuslist, .booklist{
+            float: left;
+            height: 205px;
+            margin: 0 30px 30px 0;
+            width: 260px;
+            .managebtn{
+                box-shadow: 0 0 0 1px $color3197fc;
+                color: $color3197fc;
+                cursor: pointer;
+                float: left;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                width: 88px;
+            }
+            .img{
+                background: $colorf0f7ff;
+                height: 145px;
+                width: 100%;
+                img{
+                    height: 145px;
+                    width: 260px;
+                }
+            }
+            .teacherline{
+                background: $color727272;
+                color: $bgwhite;
+                font-size: 12px;
+                height: 18px;
+                line-height: 18px;
+                width: 100%;
+                .left{
+                    float: left;
+                    line-height: inherit;
+                    text-indent: 3px;
+                    width: 60%;
+                }
+                .right{
+                    float: right;
+                    line-height: inherit;
+                    margin-right: 3px;
+                    max-width: 30%;
+                    width: auto;
+                }
+            }
+            .coursename{
+                font-size: 12px;
+                float: left;
+                height: 16px;
+                line-height: 16px;
+                margin: 6px 0 10px 0;
+                width: 100%;
+            }
+            .date{
+                font-size: 12px;
+                float: left;
+                height: 12px;
+                line-height: 12px;
+                width: 100%;
+            }
+        }
+    }
+    
+    .nodata{
+        color: $colorcecece;
+        font-size: 16px;
+        float: left;
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+.formwin {
+    .canvaspart {
+        float: left;
+        position: relative;
+    }
+    .fileup{
+        float: left;
+        opacity: 0;
+        position: relative;
+        width: 90px;
+        z-index: 1000003;
+    }
+    .warntxt{
+        width: 100%;
+        float: left;
+        text-indent: 100px;
+    }
+    .filechoose,.unresaddbtn,.resaddbtn{
+        background: $bgwhite;
+        border:1px solid $color3197fc;
+        color: $color3197fc;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        left: 90px;
+        line-height: 30px;
+        position: absolute;
+        margin-left: 10px;
+        text-align: center;
+        width: 90px;
+        z-index: 1000000;
+    }
+    .unresaddbtn{
+        border:1px solid $color727272;
+        color: $color727272;
+    }
+    .filelist{
+        float: left;
+        min-height: 30px;
+        margin-left: 100px;
+        margin-top: 12px;
+        position: relative;
+        width: 480px;
+        .list{
+            float: left;
+            position: relative;
+            margin-right: 20px;
+            width: 130px;
+            .fileclose{
+                font-size: 14px;
+                position: absolute;
+                right: 0;
+                top: -16px;
+                zoom: 0.5;
+                z-index: 1000005;
+            }
+            .filechoose {
+                left: 0;
+                margin-left:0;
+                width: 130px;
+            }
+        }
+    }
+    .sliderpart{
+        float: left;
+        margin-top: 20px;
+        width: 100%;
+        .progress{
+            float: left;
+            background: #d3d3d3;
+            border-radius: 3px;
+            height: 7px;
+            margin-left: 10px;
+            margin-top: 3px;
+            margin-right: 10px;
+            position: relative;
+            width: 100px;
+        }
+        .innergress {
+            background: #2c9cff;
+            border-radius: 3px;
+            height: 7px;
+            position: relative;
+            width: 0;
+        }
+        .innergress:before{
+            background: #2c9cff;
+            border-radius: 50%;
+            content: '';
+            height: 14px;
+            position: absolute;
+            right: -7px;
+            top: -3px;
+            width: 14px;
+        }
+        .slidericon{
+            color: $colorcecece;
+            font-size: 16px;
+            float: left;
+        }
+    }
+    .mrightcreate{
+        background: $bgwhite;
+        border:1px solid $color3197fc;
+        color: $color3197fc;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 10px;
+        text-align: center;
+        width: 90px;
+    }
+    #realcanvas{
+        position: relative;
+        left: -10000000px;
+    }
+    .canvaspart{
+        background: #f0f7ff;
+        float: left;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        width: 530px;
+    }
+    #canvas,.divcenter {
+        border: 1px solid #404853;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 130px;
+        width: 230px;
+        margin: auto;
+        z-index: 2;
+    }
+    #canvasimg{
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+}

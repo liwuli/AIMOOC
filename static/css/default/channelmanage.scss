@@ -1,0 +1,97 @@
+$bgwhite:#fff;//内容及title标题背景色
+$color3197fc: #3197fc;//高亮
+$color98b4d9: #98b4d9;//input 边框
+.listrank{
+    box-shadow: 0 0 0 1px $color98b4d9;
+    float: left;
+    margin-bottom: 50px;
+    width: 100%;
+    .head{
+        border-bottom: 1px solid $color98b4d9;
+        float: left;
+        height: 35px;
+        width: 100%;
+        .name,.status,.opt,.pink{
+            box-shadow: 1px 0px 0 0 $color98b4d9;
+            font-weight: 600;
+            float: left;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            width: 40%;
+        }
+        .status{
+            width: 10%;
+        }
+        .pink{
+            margin-left: -1px;
+            width: 15%;
+        }.opt{
+            box-shadow:none;
+            width: 50%;
+        }
+    }
+    .list{
+        box-shadow: 0 0 0 1px $color98b4d9;
+        background: #fff;
+        float: left;
+        height: 35px;
+        width: 100%;
+        .name,.status,.pink{
+           box-shadow: 1px 0px 0 0 $color98b4d9;
+            float: left;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            width: 40%;
+        }
+        .status{
+            width: 10%;
+        }
+        .pink{
+            width: 15%;
+            input{
+                box-shadow: 1px 0px 0 0px $color98b4d9 inset;
+                border:none;
+                float: left;
+                height: 35px;
+                line-height: 35px;
+                margin: 0;
+                outline: none;
+                padding: 0;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .opt{
+            float: left;
+            height: 35px;
+//          width: 50%;
+            .edit,.up,.down,.btnset,.del{
+                cursor: pointer;
+                font-size: 14px;
+                float: left;
+                height: 14px;
+                margin-left: 10px;
+                line-height: 14px;
+                text-align: center;
+                width: auto;
+            }
+            span{
+                float: left;
+                margin-top: 10px;
+            }
+            .setticon,.editicon,.delicon,.upicon ,.downicon{
+                cursor: pointer;
+                font-size: 14px;
+                float: left;
+                height: 14px;
+                margin: 10px 5px 0 18px;
+                width: 14px;
+            }
+            .upicon{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

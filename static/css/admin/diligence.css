@@ -1,0 +1,92 @@
+.diligence_div1{
+	float: left;
+	width: 100%;
+	height: 50px;
+	/* border-bottom: 1px solid #000000; */
+}
+
+.diligence_span1 {
+	margin-left: 50px;
+	font-size: 18px;
+	color: #999999;
+	line-height: 50px;
+	font-weight: 550;
+	border-right: 1px solid #000000;
+	padding-right: 15px;
+}
+
+.diligence_span2 {
+	margin-left: 15px;
+	font-size: 18px;
+	color: #999999;
+	line-height: 50px;
+	font-weight: 550;
+}
+
+.diligence_daochu{
+	float: right;
+	width: 100px;
+	height: 35px;
+	margin-top: 7.5px;
+	margin-right: 23px;
+	font-size: 16px;
+}
+
+.diligence_div2{
+  float: left;
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.diligence_div3{
+	float: left;
+	width: calc(100% - 100px);
+	margin-left: 50px;
+  margin-top: 20px;
+}
+
+.diligence_span3{
+  line-height: 50px;
+  padding-bottom:11px;
+  font-size: 16px;
+  margin-left: 50px;
+  border-bottom:2px solid #459CFC;
+ /* text-decoration: underline; */
+}
+
+
+.btn-prev{
+	padding-left: 10px !important;
+	padding-right: 10px!important;
+}
+
+.btn-next{
+	padding-left: 10px !important;
+	padding-right: 10px!important;
+}
+
+.pagination1{
+	margin-top: 40px !important;
+}
+
+.el-menu-item{
+  padding: 0 !important;
+}
+
+
+.el-pagination span:not([class*=suffix]){
+	display: inline !important;
+}
+
+ .el-menu--horizontal>.el-menu-item.is-active{
+ 	color: #3197fc !important;
+ }
+
+ .selectsss{
+ 	margin-top:40px !important;
+ }
+
+.el-input__icon{
+	height: auto!important;
+}

@@ -1,0 +1,160 @@
+<template>
+ 	<div class="formwin">
+ 		<div class="win_content" :style="'width:' + wininfo.widhei[0] + ';height:' + wininfo.widhei[1]">
+ 			<div class="title">
+ 				<span class="menuname">教室编辑</span>
+ 				<span class="filename"></span>
+ 			</div>
+ 			<div class="winclose iconfont icon-guanbijiantou" @click="cancelfn"></div>
+ 			<div class="content" :style="'height:' + wininfo.contenthei">
+			 	<div class="formline">
+			 		<span class="txt">教室名称<i>*</i>：</span>
+			 		<input type="text"  v-model="room"  :value="room"/>
+			 	</div>
+			 	<div class="formline">
+			 		<span class="txt">教室类型：</span>
+          <div class="Select" id="select01" style="margin-top: 3px"></div>
+			 	</div>
+			    <!--<div class="formline">
+			 		<span class="txt">{{basicinfo.roomipN}}：</span>
+			 		<input type="text"  v-model="roomip" />
+			 	</div>-->
+			 	<!--<div class="formline">
+			 		<span class="txt">{{basicinfo.pointN}}：</span>
+			 		<Radio :genderval="gendar" :type="edit" @radioevent="radioevent" :radioinfo="radioinfo"></Radio>
+			 	</div>-->
+ 			</div>
+ 			<div class="btnline">
+ 				<div class="cancel" @click="cancelfn" :style="'margin-left:' + wininfo.btncancelleft">取消</div>
+ 				<div class="save" @click="savedata">保存</div>
+ 			</div>
+ 		</div>
+ 	</div>
+</template>
+
+<script>
+import * as types from '@/store/win-types'
+// import Radio from '@/components/extend/radio.vue'
+import {radioinfo, warntxt, pathinfo, editdetailurl} from '@/module/admin/config/buildinginfo'
+import {microteaching} from '@/module/admin/config/urlPage'
+export default {
+  name: 'AJbuildingeditdetail',
+  data () {
+    return {
+      isAnalysis: '0',
+      room: '',
+      address: '',
+      id: '',
+      ind: 0,
+      parentid: '',
+      vals: '',
+      gendar: 0,
+      wininfo: {
+        widhei: ['500px', '300px'],
+        btncancelleft: '345px',
+        contenthei: '253px'
+      },
+      edit: 'edit'
+    }
+  },
+  components: {
+//  Radio
+  },
+  methods: {
+    valid () {
+
+      if (this.room.replace(/\s/gi, '') === '') {
+        this.win(warntxt.room, '', false)
+        return false
+      } else {
+        return true
+      }
+    },
+    radioevent (obj) {
+      this.vals = obj.val
+    },
+    savedata () {
+      if (this.valid()) {
+        let that = this
+        this.axios({
+          method: 'post',
+          url: editdetailurl,
+          params: {
+            params: {
+              isAnalysis: that.isAnalysis,
+              classroomName: that.room,
+              classroomAddress: that.address,
+              teachBuildingId: that.parentid,
+              classroomId: that.id
+            }
+          }
+        })
+        .then(function (res) {
+          if (res.data.code !== 200) {
+            that.win(res.data.message, '', false)
+          } else {
+            that.$router.push({name: pathinfo.prex})
+          }
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+      }
+    },
+    cancelfn () {
+      this.$router.go(-1);
+    },
+    win (content, backfn, flag) {
+      if (flag === undefined) {
+        flag = true
+      }
+      this.$Win({
+        'title': types.title,
+        'type': 'txt',
+        'content': content,
+        'timeout': types.Timeout3,
+        'cancel': function (obj) {
+          obj.remove(obj.getid)
+        },
+        'closeshow': flag,
+        'timefn': function () {
+          if (backfn) {
+            backfn()
+          }
+        }
+      })
+    }
+  },
+  mounted () {
+    let obj = this.$route.params.item
+    if (!obj) {
+      this.win(types.back, this.cancelfn, false)
+    } else {
+      this.radioinfo = radioinfo
+      this.gendar = obj.bookable ? 0 : 1
+      this.ind = this.$route.params.info[4]
+      this.id = obj.id
+      this.parentid = obj.ids
+      this.address = obj.address
+      this.vals = obj.bookable
+      this.room = obj.name
+      this.isAnalysis = obj.isAnalysis.toString()
+    }
+    let that = this
+    var data = []
+    if(microteaching){
+        data = [{txt: '云录播教室', value: 0}, {txt: '集中智慧教室', value: 1}, {txt: '单机智慧教室', value: 2},{txt: '微格教室', value: 3}]
+    }else{
+        data = [{txt: '云录播教室', value: 0}, {txt: '集中智慧教室', value: 1}, {txt: '单机智慧教室', value: 2}]
+    }
+    this.$Select({
+      data: data,
+      selectId: 'select01',
+      callback: function (obj) {
+        that.isAnalysis = obj.value
+      },
+      matchval: [{val: that.isAnalysis}]
+    })
+  }
+}
+</script>

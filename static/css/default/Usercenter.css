@@ -1,0 +1,93 @@
+body { background: #ececec; }
+
+.U_left { background: #fff; float: left; width: 256px; }
+.U_left .userinfo { border-bottom: 1px solid #84c0ff; float: left; height: 163px; margin: 30px 0 0 28px; position: relative; width: 200px; }
+.U_left .userinfo .img { background: #bcd4f0; border-radius: 50%; cursor: pointer; height: 95px; margin: 0 0 0 50px; position: relative; width: 95px; }
+.U_left .userinfo .img img { border-radius: 50%; height: 95px; width: 95px; }
+.U_left .userinfo .img .hover { background: rgba(0, 0, 0, 0.3); border-radius: 50%; display: none; height: 95px; left: 0; position: absolute; top: 0; width: 95px; z-index: 2; }
+.U_left .userinfo .img .hover .showicon { bottom: 0; color: #fff; font-size: 24px; height: 24px; left: 0; margin: auto; position: absolute; right: 0; top: 0; width: 24px; }
+.U_left .userinfo .img:hover .hover { display: block; }
+.U_left .userinfo .name { font-size: 17px; float: left; height: 17px; line-height: 17px; margin-top: 20px; margin-left: 50px; text-align: center; width: 95px; }
+.U_left .userinfo .edit { font-size: 17px; float: left; height: 17px; line-height: 17px; margin-top: 20px; text-align: center; width: 17px; }
+.U_left .Manage { float: left; height: 46px; line-height: 46px; margin-top: 20px; position: relative; width: 100%; }
+.U_left .Manage .iconcssed { color: #fff !important; font-size: 21px !important; position: absolute; left: 30px; top: 0px; height: 21px; width: 21px; z-index: 2; }
+.U_left .Manage .iconcss { color: inherit; font-size: 21px !important; position: absolute; left: 30px; top: 0px; height: 21px; width: 21px; z-index: 2; }
+.U_left .Manage a { color: inherit; float: left; font-size: 16px; height: 46px; line-height: 46px; position: relative; text-indent: 68px; width: 100%; }
+.U_left .Manage a.active { color: #fff; background: #3197fc; }
+.U_left .Manage:hover { color: #fff; background: #3197fc; }
+
+.U_right { background: #fff; float: left; height: auto; margin-left: 10px; width: 930px; }
+.U_right .allmessage { border-bottom: 1px solid #3197fc; float: right; height: 39px; line-height: 39px; margin-top: 20px; margin-bottom: 30px; margin-right: 30px; width: 870px; }
+.U_right .tab { border-bottom: 1px solid #3197fc; float: right; font-size: 17px; height: 39px; line-height: 39px; margin-top: 20px; margin-bottom: 30px; margin-right: 30px; width: 870px; }
+.U_right .tab span { cursor: pointer; float: left; margin-right: 40px; height: 39px; line-height: 39px; width: auto; }
+.U_right .tab .span { box-shadow: 0 -2px 0 0 #3197fc inset; }
+.U_right .msglist { background: #e4f0fe; float: right; min-height: 56px; margin-bottom: 20px; margin-right: 30px; padding: 0 10px; width: 850px; }
+.U_right .msglist .lines { float: left; line-height: 28px; word-break: break-all; width: 100%; }
+.U_right .msgmore { box-shadow: 0 0 0 1px #3197fc; color: #3197fc; cursor: pointer; float: left; height: 28px; line-height: 28px; margin-left: 420px; text-align: center; width: 88px; }
+.U_right .left30 { float: left; margin-left: 30px; width: 870px; }
+.U_right .left30 .edit { color: #3197fc; cursor: pointer; float: right; height: 18px; line-height: 18px; margin-top: -10px; width: auto; }
+.U_right .left30 .save, .U_right .left30 .saveno { background: #3197fc; color: #fff; cursor: pointer; float: left; height: 30px; line-height: 30px; margin: 110px 0 0 390px; text-align: center; width: 90px; }
+.U_right .left30 .saveno { background: #727272; }
+.U_right .left30 .basicline { float: left; height: 30px; line-height: 30px; margin: 15px 0; position: relative; width: 100%; }
+.U_right .left30 .basicline .warn { color: #f00; left: 82px; position: absolute; top: 30px; }
+.U_right .left30 .basicline .icons { font-size: 14px; float: left; height: 30px; margin: 0 10px; }
+.U_right .left30 .basicline .blue { color: #3197fc; }
+.U_right .left30 .basicline .red { color: #f00; }
+.U_right .left30 .basicline .txt { float: left; line-height: inherit; min-width: 82px; }
+.U_right .left30 .basicline .input { float: left; height: 28px; line-height: 28px; padding: 0 5px; width: 420px; }
+.U_right .left30 .search { float: left; line-height: 28px; min-height: 28px; width: 100%; }
+.U_right .left30 .search .txt { float: left; line-height: 32px; margin-right: 15px; width: auto; }
+.U_right .left30 .search .to { float: left; line-height: 32px; margin: 0 10px; width: auto; }
+.U_right .left30 .search .input { float: left; height: 28px; line-height: 28px; margin-left: 220px; padding: 0 5px; width: 200px; }
+.U_right .left30 .search .searchbtn { box-shadow: 0 0 0 1px #3197fc; color: #3197fc; cursor: pointer; float: left; height: 28px; line-height: 28px; margin-left: 10px; text-align: center; width: 58px; }
+.U_right .left30 .search .secondline { float: left; height: 28px; line-height: 28px; margin: 30px 0; width: 100%; }
+.U_right .left30 .search .secondline .blue { color: #3197fc; }
+.U_right .left30 .collectlivelist { background: #f2f2f2; float: left; height: 200px; margin: 0 30px 30px 0; overflow: hidden; position: relative; width: 260px; }
+.U_right .left30 .collectlivelist .del { position: absolute; right: 3px; bottom: 8px; }
+.U_right .left30 .collectlivelist .img { background: #f0f7ff; float: left; height: 143px; width: 260px; }
+.U_right .left30 .collectlivelist .img img { height: 143px; width: 260px; }
+.U_right .left30 .collectlivelist .bluepart, .U_right .left30 .collectlivelist .greenpart, .U_right .left30 .collectlivelist .yellowpart, .U_right .left30 .collectlivelist .failedpart { color: #fff; font-size: 12px; height: 30px; line-height: 30px; left: -107px; position: absolute; transform: rotate(-45deg); transform-origin: center; text-align: center; top: 10px; width: 100%; }
+.U_right .left30 .collectlivelist .bluepart { background: rgba(61, 139, 224, 0.8); }
+.U_right .left30 .collectlivelist .greenpart { background: rgba(18, 157, 16, 0.8); }
+.U_right .left30 .collectlivelist .yellowpart { background: rgba(235, 188, 74, 0.8); }
+.U_right .left30 .collectlivelist .failedpart { background: rgba(87, 87, 89, 0.8); }
+.U_right .left30 .collectlivelist .name { float: left; height: 12px; line-height: 12px; margin: 10px 4%; width: 92%; }
+.U_right .left30 .collectlivelist .person { float: left; font-size: 12px; margin: 0px 4%; width: 88%; }
+.U_right .left30 .collectlivelist .person .admin, .U_right .left30 .collectlivelist .person .adminname { float: left; }
+.U_right .left30 .collectlivelist .person .adminname { margin-left: 5px; }
+.U_right .left30 .collectlist { float: left; width: 290px; margin-bottom: 15px; }
+.U_right .left30 .collectlist .img { background: #f0f7ff; height: 117px; width: 206px; margin: 0 auto; }
+.U_right .left30 .collectlist .img img { height: 117px; width: 206px; }
+.U_right .left30 .collectlist .coursename { display: block;  margin: 0 auto; line-height: 20px; width: 206px; overflow: hidden; text-overflow:ellipsis; white-space: nowrap; }
+.U_right .left30 .focuslist, .U_right .left30 .booklist { float: left; height: 205px; margin: 0 30px 30px 0; width: 260px; }
+.U_right .left30 .focuslist .managebtn, .U_right .left30 .booklist .managebtn { box-shadow: 0 0 0 1px #3197fc; color: #3197fc; cursor: pointer; float: left; height: 28px; line-height: 28px; text-align: center; width: 88px; }
+.U_right .left30 .focuslist .img, .U_right .left30 .booklist .img { background: #f0f7ff; height: 145px; width: 100%; }
+.U_right .left30 .focuslist .img img, .U_right .left30 .booklist .img img { height: 145px; width: 260px; }
+.U_right .left30 .focuslist .teacherline, .U_right .left30 .booklist .teacherline { background: #727272; color: #fff; font-size: 12px; height: 18px; line-height: 18px; width: 100%; }
+.U_right .left30 .focuslist .teacherline .left, .U_right .left30 .booklist .teacherline .left { float: left; line-height: inherit; text-indent: 3px; width: 60%; }
+.U_right .left30 .focuslist .teacherline .right, .U_right .left30 .booklist .teacherline .right { float: right; line-height: inherit; margin-right: 3px; max-width: 30%; width: auto; }
+.U_right .left30 .focuslist .coursename, .U_right .left30 .booklist .coursename { font-size: 12px; float: left; height: 16px; line-height: 16px; margin: 6px 0 10px 0; width: 100%; }
+.U_right .left30 .focuslist .date, .U_right .left30 .booklist .date { font-size: 12px; float: left; height: 12px; line-height: 12px; width: 100%; }
+.U_right .nodata { color: #cecece; font-size: 16px; float: left; margin-top: 30px; width: 100%; }
+
+.formwin .canvaspart { float: left; position: relative; }
+.formwin .fileup { float: left; opacity: 0; position: relative; width: 90px; z-index: 1000003; }
+.formwin .warntxt { width: 100%; float: left; text-indent: 100px; }
+.formwin .filechoose, .formwin .unresaddbtn, .formwin .resaddbtn { background: #fff; border: 1px solid #3197fc; color: #3197fc; cursor: pointer; float: left; height: 30px; left: 90px; line-height: 30px; position: absolute; margin-left: 10px; text-align: center; width: 90px; z-index: 1000000; }
+.formwin .unresaddbtn { border: 1px solid #727272; color: #727272; }
+.formwin .filelist { float: left; min-height: 30px; margin-left: 100px; margin-top: 12px; position: relative; width: 480px; }
+.formwin .filelist .list { float: left; position: relative; margin-right: 20px; width: 130px; }
+.formwin .filelist .list .fileclose { font-size: 14px; position: absolute; right: 0; top: -16px; zoom: 0.5; z-index: 1000005; }
+.formwin .filelist .list .filechoose { left: 0; margin-left: 0; width: 130px; }
+.formwin .sliderpart { float: left; margin-top: 20px; width: 100%; }
+.formwin .sliderpart .progress { float: left; background: #d3d3d3; border-radius: 3px; height: 7px; margin-left: 10px; margin-top: 3px; margin-right: 10px; position: relative; width: 100px; }
+.formwin .sliderpart .innergress { background: #2c9cff; border-radius: 3px; height: 7px; position: relative; width: 0; }
+.formwin .sliderpart .innergress:before { background: #2c9cff; border-radius: 50%; content: ''; height: 14px; position: absolute; right: -7px; top: -3px; width: 14px; }
+.formwin .sliderpart .slidericon { color: #cecece; font-size: 16px; float: left; }
+.formwin .mrightcreate { background: #fff; border: 1px solid #3197fc; color: #3197fc; cursor: pointer; float: left; height: 30px; line-height: 30px; margin-left: 10px; text-align: center; width: 90px; }
+.formwin #realcanvas { position: relative; left: -10000000px; }
+.formwin .canvaspart { background: #f0f7ff; float: left; height: 300px; overflow: hidden; position: relative; width: 530px; }
+.formwin #canvas, .formwin .divcenter { border: 1px solid #404853; position: absolute; left: 0; right: 0; bottom: 0; top: 0; height: 130px; width: 230px; margin: auto; z-index: 2; }
+.formwin #canvasimg { left: 0; position: absolute; top: 0; z-index: 1; }
+
+/*# sourceMappingURL=Usercenter.css.map */

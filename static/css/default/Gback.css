@@ -1,0 +1,9 @@
+#administrtivelist { float: left; width: 100%; }
+#administrtivelist .lists { float: left; box-shadow: 0 0 0 1px #8a9cc2; height: 30px; margin-bottom: 1px; width: 100%; }
+#administrtivelist .lists .radio, #administrtivelist .lists .radioed { float: left; margin-top: 0; margin-bottom: 0; height: 30px; line-height: 30px; width: 100%; }
+#administrtivelist .lists .radio .icon, #administrtivelist .lists .radioed .icon { margin: 8px 2%; }
+#administrtivelist .lists .radio .number, #administrtivelist .lists .radioed .number { float: left; box-shadow: 1px 0 0 0 #8a9cc2; text-align: center; width: 31%; }
+#administrtivelist .lists .radio .number:last-child, #administrtivelist .lists .radioed .number:last-child { box-shadow: none; }
+#administrtivelist .lists:first-child { margin-top: 20px; }
+
+/*# sourceMappingURL=Gback.css.map */
